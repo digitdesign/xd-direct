@@ -13,7 +13,7 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sd
 © 2016 – 2017 All Rights Reserved Go Digit General Insurance Ltd
 
 ## Acknowledgement
-DMT-MT is created and maintained by [Digit Design](https://godigit.design/)
+This project is created and maintained by [Digit Design](https://godigit.design/)
 
 #### Still need help?
-Send us an email at [shaan.shivanandan@godigit.com](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20DMTMT)
+Send us an email at [shaan.shivanandan@godigit.com](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20UI%20SDK)
