@@ -15,5 +15,5 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sd
 ## Acknowledgement
 This project is created and maintained by [Digit Design](https://godigit.design/)
 
-#### Still need help?
-Send us an email at [shaan.shivanandan@godigit.com](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20UI%20SDK)
+## Support
+[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20UI%20SDK)
