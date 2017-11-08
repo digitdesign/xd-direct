@@ -1,0 +1,35 @@
+
+// Misc
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@border-radius: .3rem;
+@transition: all 200ms cubic-bezier(.250, .100, .250, 1.000);
+
+a,
+button {
+	-webkit-transition: @transition;
+	transition: @transition;
+}
+
+input {
+	-webkit-transition: @transition;
+	transition: @transition;
+}
+
+
+abbr {
+	text-decoration: none;
+	border-bottom: 1px solid @grey-50;
+}
+
+::-moz-selection {
+	background: @amber-50;
+}
+
+::selection {
+	background: @amber-50;
+}
+
+::-moz-selection {
+	background: @amber-50;
+}
