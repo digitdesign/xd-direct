@@ -17,16 +17,21 @@ input[type='submit'] {
 	font-family: inherit;
 	font-size: 1.5rem;
 	font-weight: 700;
-	line-height: 1;
+	line-height: 0;
+	height: 4.4rem;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 	&:focus,
 	&:hover {
-		background-color: @amber-200;
-		border-color: @amber-200;
+		background-color: @amber-100;
+		border-color: @amber-100;
 		color: @grey-800;
 		outline: 0;
+	}
+	&:active {
+		-webkit-transform: scale(.97);
+		transform: scale(.97);
 	}
 	&[disabled] {
 		cursor: default;

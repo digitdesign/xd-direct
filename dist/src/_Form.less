@@ -21,23 +21,26 @@ select {
 	box-shadow: none;
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
-	padding: 1.4rem;
+	padding: 1.2rem 1.4rem;
+	height: 4.4rem;
 	width: 100%;
 	font-family: inherit;
 	font-size: 1.4rem;
+	color: @grey-900;
+	letter-spacing: 0.02rem;
 	&:focus {
 		border-color: @amber-400;
-		-webkit-box-shadow: 0 0 3px #fea;
-		box-shadow: 0 0 6px #fea;
+		-webkit-box-shadow: 0 0 6px @amber-100;
+		box-shadow: 0 0 6px @amber-A100;
 		outline: 0;
 	}
 }
 
 select {
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="@grey-200" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
 	padding-right: 3.0rem;
 	&:focus {
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="@grey-200" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
 	}
 }
 
@@ -48,9 +51,10 @@ textarea {
 label,
 legend {
 	display: block;
-	font-size: 1.4rem;
-	font-weight: 600;
+	font-size: 1.3rem;
+	font-weight: 500;
 	margin-bottom: .4rem;
+	color: @grey-900;
 }
 
 fieldset {
