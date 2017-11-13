@@ -1,5 +1,5 @@
 # Digit UI SDK
-> UI Software Development Kit for Digit Insurance Portals
+> UI Software Development Kit for Digit Insurance
 
 ## Installation
 ```sh

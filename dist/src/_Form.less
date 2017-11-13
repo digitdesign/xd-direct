@@ -41,13 +41,16 @@ select {
 		box-shadow: 0 0 6px @amber-A100;
 		outline: 0;
 	}
+	&:disabled {
+		cursor: not-allowed;
+	}
 }
 
 select {
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="@grey-200" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>') center right no-repeat;
 	padding-right: 3rem;
 	&:focus {
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="@grey-200" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>');
 	}
 }
 
@@ -71,7 +74,11 @@ fieldset {
 
 input[type='checkbox'],
 input[type='radio'] {
+	font-family: inherit;
 	display: inline;
+	&:disabled {
+		cursor: not-allowed;
+	}
 }
 
 .label-inline {
