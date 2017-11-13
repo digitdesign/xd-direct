@@ -12,6 +12,11 @@ git clone https://github.com/digitdesign/digit-ui-sdk.git
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sdk/issues/new/) or submit PRs
 
+### Contributors
+- Anuj Gangwal
+- Shaan Shivanandan
+- Vivek Chaturvedi
+
 ## License
 © 2016 – 2017 Go Digit General Insurance Ltd.
 
