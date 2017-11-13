@@ -1,4 +1,3 @@
-![Digit UI SDK](https://privacdn.com/godigit/digit-ui-sdk-hero.png)
 # Digit UI SDK: User Interface Software Development Kit
 > User Interface Software Development Kit for Digit Insurance Application Development
 
