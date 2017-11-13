@@ -1,14 +1,16 @@
 # Digit UI SDK
 > User Interface Software Development Kit for Digit Insurance Application Development
 
-## Installation
+## Installation & Usage
+- Download the latest release here or;
+- Clone the repository using:
 ```sh
 git clone https://github.com/digitdesign/digit-ui-sdk.git
 ```
 
 ## Usage
 ```sh
-git clone https://github.com/digitdesign/digit-ui-sdk.git
+https://privacdn.com/godigit/uisdk/css/main.css
 ```
 
 ## Contributing
