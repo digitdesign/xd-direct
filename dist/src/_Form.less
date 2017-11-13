@@ -1,7 +1,5 @@
-
 // Form
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 input[type='email'],
 input[type='number'],
 input[type='password'],
@@ -42,6 +40,8 @@ select {
 		outline: 0;
 	}
 	&:disabled {
+		color: @grey-500;
+		border-style: dotted;
 		cursor: not-allowed;
 	}
 }
@@ -77,6 +77,8 @@ input[type='radio'] {
 	font-family: inherit;
 	display: inline;
 	&:disabled {
+		color: @grey-500;
+		border-style: dotted;
 		cursor: not-allowed;
 	}
 }
