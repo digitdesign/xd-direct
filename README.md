@@ -1,5 +1,5 @@
 # Digit UI SDK
-> UI Software Development Kit for Digit Insurance
+> User Interface Software Development Kit for Digit Insurance Application Development
 
 ## Installation
 ```sh
@@ -10,7 +10,7 @@ git clone https://github.com/digitdesign/digit-ui-sdk.git
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sdk/issues/new/) or submit PRs
 
 ## License
-© 2016 – 2017 Go Digit General Insurance Ltd
+© 2016 – 2017 Go Digit General Insurance Ltd.
 
 ## Acknowledgement
 This project is created and maintained by [Digit Design](https://godigit.design/)
