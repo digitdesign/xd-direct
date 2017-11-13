@@ -105,3 +105,59 @@
 	background: @grey-50;
 	background-color: @grey-50;
 }
+
+// Navbar
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.navbar {
+	background: #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+	padding: 0 3rem;
+}
+
+.navbar .toggle,
+.navbar .brand {
+	display: inline-block;
+}
+
+a.link {
+	display: block;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0.6rem 1.1rem;
+	color: #888;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.navbar div {
+	display: none;
+}
+
+.navbar a.link.active {
+	color: #000;
+	border-color: #fa0;
+}
+
+.navbar a.link:hover,
+.navbar a.link:active {
+	color: #000;
+}
+
+.navbar .brand {
+	text-align: center;
+	padding: 1.4rem;
+	vertical-align: middle;
+}
+
+.navbar .toggle {
+	padding: 1em;
+	color: #000;
+	vertical-align: bottom;
+}

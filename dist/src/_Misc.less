@@ -11,6 +11,11 @@ button {
 	transition: @transition;
 }
 
+input[type='button'] {
+	-webkit-transition: @transition;
+	transition: @transition;
+}
+
 input {
 	-webkit-transition: @transition;
 	transition: @transition;
@@ -32,4 +37,25 @@ abbr {
 
 ::-moz-selection {
 	background: @amber-50;
+}
+
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+::-webkit-input-placeholder {
+	color: @grey-200;
+}
+
+::-moz-placeholder {
+	color: @grey-200;
+}
+
+:-ms-input-placeholder {
+	color: @grey-200;
+}
+
+:-moz-placeholder {
+	color: @grey-200;
 }
