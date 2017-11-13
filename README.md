@@ -6,6 +6,12 @@
 git clone https://github.com/digitdesign/digit-ui-sdk.git
 ```
 
+## Usage
+Use the `index.html` file provided at [view-source:https://d2h44aw7l5xdvz.cloudfront.net/sdk/index.html](view-source:https://d2h44aw7l5xdvz.cloudfront.net/sdk/index.html)
+```sh
+git clone https://github.com/digitdesign/digit-ui-sdk.git
+```
+
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sdk/issues/new/) or submit PRs
 
