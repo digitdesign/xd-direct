@@ -12,7 +12,7 @@ git clone https://github.com/digitdesign/digit-ui-sdk.git
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sdk/issues/new/) or submit PRs
 
-### Contributors
+#### Contributors
 - Anuj Gangwal
 - Shaan Shivanandan
 - Vivek Chaturvedi
