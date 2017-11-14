@@ -4,7 +4,7 @@
 
 ## Installation & Usage
 - [Download latest release](https://github.com/digitdesign/digit-ui-sdk/archive/master.zip) or;
-- Clone the repository using:
+- Clone the Digit UI SDK repository using the command below:
 ```sh
 git clone https://github.com/digitdesign/digit-ui-sdk.git
 ```
