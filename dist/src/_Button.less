@@ -7,22 +7,21 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	background-color: @amber-300;
-	border: .1rem solid @amber-300;
+	border: 1px solid @amber-300;
 	border-radius: @border-radius;
 	color: @grey-900;
 	cursor: pointer;
 	display: inline-block;
-	padding: 1.55rem 2.5rem;
 	font-family: inherit;
 	font-size: 1.4rem;
 	font-weight: 700;
-	line-height: 0;
-	height: 4.4rem;
+	padding: 15px 25px;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
-	backface-visibility: hidden;
 	&:focus,
 	&:hover {
 		background-color: @amber-100;
@@ -37,11 +36,11 @@ input[type='submit'] {
 	}
 	&[disabled] {
 		cursor: not-allowed;
+		background: @grey-100;
+		border-color: @grey-100;
+		color: @grey-700;
 		&:focus,
-		&:hover {
-			background-color: @amber-300;
-			border-color: @amber-300;
-		}
+		&:hover {}
 	}
 	&.ghost {
 		background-color: transparent;
@@ -56,8 +55,8 @@ input[type='submit'] {
 		&[disabled] {
 			&:focus,
 			&:hover {
-				cursor: not-allowed;
 				border-color: inherit;
+				cursor: not-allowed;
 				color: @grey-300;
 			}
 		}

@@ -3,13 +3,6 @@
 * Global Classes
 */
 
-// Login Page
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.login-section {
-	max-width: 100%;
-	margin: 0 auto;
-}
-
 // Padding & Margin
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .nopadding {
@@ -36,24 +29,6 @@
 
 .minheight {
 	min-height: 100%;
-}
-
-// Font Sizes
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.fs-25 {
-	font-size: 25%;
-}
-
-.fs-50 {
-	font-size: 50%;
-}
-
-.fs-75 {
-	font-size: 75%;
-}
-
-.fs-100 {
-	font-size: 100%;
 }
 
 // Font Weights
@@ -102,6 +77,18 @@
 	height: 100%;
 }
 
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
 // Positions
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .fixed-top {
@@ -134,14 +121,12 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .navbar {
 	background: @white;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-	padding: 0 3rem;
-}
-
-.navbar .toggle,
-.navbar .brand {
-	display: inline-block;
+	-webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+	padding: 0 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 a.link {
@@ -152,7 +137,7 @@ a.link {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 1.4rem 1.6rem;
+	padding: 6px 10px;
 	color: @grey-600;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
@@ -161,7 +146,25 @@ a.link {
 }
 
 .navbar div {
-	display: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.navbar .left,
+.navbar .right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.navbar .right {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
 
 .navbar a.link.active {
@@ -172,109 +175,33 @@ a.link {
 .navbar a.link:hover,
 .navbar a.link:active {
 	color: @black;
-	border-bottom: 2px solid @grey-100;
+	border-bottom: 2px solid @grey-50;
 }
 
-a.link.active:hover {
-	border-color: @amber-300;
+img.brand {
+	margin-right: 34px;
+	font-size: 1em;
+	font-weight: 700;
+	color: @grey-900;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	min-height: 32px;
 }
 
 .navbar .brand {
 	text-align: center;
-	padding: 2rem;
+	padding: 14px;
 	vertical-align: middle;
 }
 
 .navbar .toggle {
-	padding: 1em;
-	color: @black;
-	vertical-align: bottom;
-}
-
-@media (max-width: 550px) {
-	h1.title {
-		font-size: 1.3rem;
-		font-weight: 400;
-	}
-	main.hero {
-		padding: 0;
-	}
-	[class*="col-"] {
-		width: 50%;
-	}
-	.navbar {
-		padding: 0;
-	}
-	a.menubtn {
-		border-radius: 0;
-		margin: 0;
-	}
-}
-
-@media (max-width: 1000px) {}
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 48em) {
-	.navbar {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-	.navbar .left,
-	.navbar .right {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-	}
-	.navbar a.link {
-		width: auto;
-	}
-	.navbar .right {
-		-webkit-box-pack: end;
-		-ms-flex-pack: end;
-		justify-content: flex-end;
-	}
-	.navbar .toggle {
-		display: none;
-	}
-}
-
-@media (min-width: 48em) {
-	.navbar div {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-}
-
-@media (max-width: 48em) {
-	.navbar.active div {
-		display: block;
-	}
-	a.link {
-		border-left: 2px solid transparent;
-	}
-	a.link.active {
-		border-left: 2px solid @amber-400;
-		border-bottom: none;
-	}
-}
-
-@media (max-width: 750px) {
-	[class*="col-"] {
-		width: 100%;
-		max-width: 100%;
-	}
-	[class*="row"] {
-		display: block;
-	}
-	.navbar {
-		padding: 0;
-	}
+	display: none;
 }
 
 //Section
@@ -325,27 +252,4 @@ button {
 	max-width: 42rem;
 	margin: 2rem auto 2.5rem;
 	line-height: 1.4;
-}
-
-// Tooltips
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
-
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 12rem;
-	background-color: black;
-	color: @amber-300;
-	text-align: center;
-	border-radius: .6rem;
-	padding: .5rem 0;
-	position: absolute;
-	z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
 }
