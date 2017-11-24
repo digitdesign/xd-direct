@@ -22,6 +22,7 @@ input[type='submit'] {
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+	backface-visibility: hidden;
 	&:focus,
 	&:hover {
 		background-color: @amber-100;
@@ -42,21 +43,22 @@ input[type='submit'] {
 			border-color: @amber-300;
 		}
 	}
-	&.button-ghost {
+	&.ghost {
 		background-color: transparent;
 		color: @grey-900;
+		border-color: @grey-300;
 		&:focus,
 		&:hover {
-			background-color: transparent;
-			border-color: @amber-200;
-			color: @amber-200;
+			background-color: @amber-300;
+			border-color: @amber-300;
+			color: @grey-900;
 		}
 		&[disabled] {
 			&:focus,
 			&:hover {
 				cursor: not-allowed;
 				border-color: inherit;
-				color: @amber-300;
+				color: @grey-300;
 			}
 		}
 	}

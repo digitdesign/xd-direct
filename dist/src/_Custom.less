@@ -172,6 +172,11 @@ a.link {
 .navbar a.link:hover,
 .navbar a.link:active {
 	color: @black;
+	border-bottom: 2px solid @grey-100;
+}
+
+a.link.active:hover {
+	border-color: @amber-300;
 }
 
 .navbar .brand {
@@ -294,4 +299,53 @@ input#polexpdate {
 
 input[type='date'] {
 	text-transform: uppercase;
+}
+
+.button,
+button {
+	margin: 1rem .7rem;
+}
+
+// Hero Section
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.hero {
+	padding: 8rem;
+	margin: auto;
+	text-align: center;
+}
+
+// Misc
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.highlight {
+	font-weight: 700;
+	color: @amber-400;
+}
+
+.title {
+	max-width: 42rem;
+	margin: 2rem auto 2.5rem;
+	line-height: 1.4;
+}
+
+// Tooltips
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 12rem;
+	background-color: black;
+	color: @amber-300;
+	text-align: center;
+	border-radius: .6rem;
+	padding: .5rem 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
