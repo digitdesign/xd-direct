@@ -20,26 +20,6 @@
 	[class*=row] {
 		display: block;
 	}
-}
-
-// Extra Small Devices, Phones
-@media only screen and (max-width: 480px) {
-	[class*=col-] {
-		width: 100%;
-	}
-	.row {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-	}
-	.row .col {
-		margin-bottom: inherit;
-		padding: 0 10px;
-	}
-	.modal-content {
-		width: 80%;
-	}
 	a.link {
 		border-left: 2px solid transparent;
 		padding: 14px;
@@ -67,6 +47,26 @@
 	.navbar {
 		padding: 0;
 		display: block;
+	}
+}
+
+// Extra Small Devices, Phones
+@media only screen and (max-width: 480px) {
+	[class*=col-] {
+		width: 100%;
+	}
+	.row {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.row .col {
+		margin-bottom: inherit;
+		padding: 0 10px;
+	}
+	.modal-content {
+		width: 80%;
 	}
 }
 

@@ -23,14 +23,6 @@
 	height: 100%;
 }
 
-.minwidth {
-	min-width: 100%;
-}
-
-.minheight {
-	min-height: 100%;
-}
-
 // Font Weights
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .fw-300 {
@@ -55,6 +47,10 @@
 
 .fw-800 {
 	font-weight: 800;
+}
+
+.fw-900 {
+	font-weight: 900;
 }
 
 // Alignment
@@ -127,6 +123,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	overflow: hidden;
 }
 
 a.link {
@@ -143,6 +140,7 @@ a.link {
 	border-bottom: 2px solid transparent;
 	font-size: 1.3rem;
 	font-weight: 600;
+	white-space: nowrap;
 }
 
 .navbar div {
@@ -230,26 +228,13 @@ input[type='date'] {
 
 .button,
 button {
-	margin: 1rem .7rem;
+	margin: 10px 8px;
 }
 
 // Hero Section
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .hero {
-	padding: 8rem;
+	padding: 80px;
 	margin: auto;
 	text-align: center;
-}
-
-// Misc
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.highlight {
-	font-weight: 700;
-	color: @amber-400;
-}
-
-.title {
-	max-width: 42rem;
-	margin: 2rem auto 2.5rem;
-	line-height: 1.4;
 }
