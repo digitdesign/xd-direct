@@ -4,9 +4,14 @@
 
 a {
 	color: @amber-400;
+	-webkit-text-decoration: none;
 	text-decoration: none;
 	&:focus,
 	&:hover {
 		color: @amber-300;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		-webkit-text-decoration-skip: ink;
+		text-decoration-skip: ink;
 	}
 }
