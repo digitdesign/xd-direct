@@ -11,6 +11,11 @@ button {
 	transition: @transition;
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	&:focus {
+		opacity: 0.5;
+		outline: none;
+		text-decoration: none;
+	}
 }
 
 input {

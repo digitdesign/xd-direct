@@ -35,11 +35,13 @@
 	.navbar .toggle {
 		padding: 12px;
 		color: @black;
-		vertical-align: bottom;
+		vertical-align: middle;
 	}
 	.navbar .toggle,
 	.navbar .brand {
-		display: inline-block;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
 	}
 	.navbar.active div {
 		display: block;
