@@ -1,6 +1,6 @@
-![Digit UI SDK](https://privacdn.com/godigit/digit-ui-sdk.png)
-# Digit UI SDK: User Interface Software Development Kit
-> User Interface Software Development Kit for Digit Insurance Application Development
+![Digit XDK](https://privacdn.com/godigit/digit-xdk-hero.png)
+# Digit XDK: Experience Development Kit
+> Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
 ## Installation & Usage
 - [Download latest release](https://github.com/digitdesign/digitxdk/archive/master.zip) or;
@@ -16,6 +16,8 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 - Anuj Gangwal
 - Shaan Shivanandan
 - Vivek Chaturvedi
+- Navneet Agarwal
+- Vinod Muralidhar
 
 ## License
 © 2016 – 2017 Go Digit General Insurance Ltd.
