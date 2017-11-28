@@ -3,14 +3,14 @@
 > User Interface Software Development Kit for Digit Insurance Application Development
 
 ## Installation & Usage
-- [Download latest release](https://github.com/digitdesign/digit-ui-sdk/archive/master.zip) or;
-- Clone the Digit UI SDK repository using the command below:
+- [Download latest release](https://github.com/digitdesign/digitxdk/archive/master.zip) or;
+- Clone the Digit XDK repository using the command below:
 ```sh
-git clone https://github.com/digitdesign/digit-ui-sdk.git
+git clone https://github.com/digitdesign/digitxdk.git
 ```
 
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sdk/issues/new/) or submit PRs
+Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/issues/new/) or submit PRs
 
 #### Contributors
 - Anuj Gangwal
@@ -24,4 +24,4 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digit-ui-sd
 This project is created and maintained by [Digit Design](https://godigit.design/)
 
 ## Support
-[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20UI%20SDK)
+[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XDK)
