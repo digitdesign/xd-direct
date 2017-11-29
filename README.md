@@ -23,4 +23,4 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 This project is created and maintained by [Digit Design](https://godigit.design/)
 
 ## Support
-[Send support request](mailto:shaan.shivanandan@godigit.com, anuj.gangwal@godigit.com?cc=vivek.chaturvedi@godigit.com&subject=Digit%20XDK%3A%20Support%20Request)
+[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XDK)
