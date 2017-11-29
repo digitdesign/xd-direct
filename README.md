@@ -1,4 +1,3 @@
-![Digit XDK](https://privacdn.com/godigit/digit-xdk-hero.png)
 # Digit XDK: Experience Development Kit
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
