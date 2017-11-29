@@ -1,4 +1,4 @@
-# Digit XDK: Experience Development Kit
+# Digit XDK: Experience Design Kit
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
 ## Installation & Usage
@@ -15,8 +15,6 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 - Anuj Gangwal
 - Shaan Shivanandan
 - Vivek Chaturvedi
-- Navneet Agarwal
-- Vinod Muralidhar
 
 ## License
 © 2016 – 2017 Go Digit General Insurance Ltd.
@@ -25,4 +23,4 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 This project is created and maintained by [Digit Design](https://godigit.design/)
 
 ## Support
-[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XDK)
+[Send support request](mailto:shaan.shivanandan@godigit.com, anuj.gangwal@godigit.com?cc=vivek.chaturvedi@godigit.com&subject=Digit%20XDK%3A%20Support%20Request)
