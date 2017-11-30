@@ -3,9 +3,39 @@ $(".toggle").on("click", function () {
 	$(".toggle").parent().toggleClass('active');
 });
 
-/*Input Field Formatting*/
-document.getElementById("regno").addEventListener('input', function (e) {
-	e.target.value = e.target.value.replace(/[^\d0-9a-zA-Z]/g, '').replace(/^(.{2})(.{2})(.{2})(.{4})$/g, "$1 $2 $3 $4").trim();
-});
-
-/*Input Maxlength Auto Change*/
+/*Email Domain Datalist Helper*/
+var EmailDomainSuggest = {
+	domains: ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"],
+	bindTo: $('#email'),
+	init: function () {
+		this.addElements();
+		this.bindEvents();
+	},
+	addElements: function () {
+		this.datalist = $("<datalist />", {
+			id: 'email-options'
+		}).insertAfter(this.bindTo);
+		this.bindTo.attr("list", "email-options");
+	},
+	bindEvents: function () {
+		this.bindTo.on("keyup", this.testValue);
+	},
+	testValue: function (event) {
+		var el = $(this),
+			value = el.val();
+		if (value.indexOf("@") != -1) {
+			value = value.split("@")[0];
+			EmailDomainSuggest.addDatalist(value);
+		} else {
+			EmailDomainSuggest.datalist.empty();
+		}
+	},
+	addDatalist: function (value) {
+		var i, newOptionsString = "";
+		for (i = 0; i < this.domains.length; i++) {
+			newOptionsString += "<option value='" + value + "@" + this.domains[i] + "'>";
+		}
+		this.datalist.html(newOptionsString);
+	}
+}
+EmailDomainSuggest.init();
