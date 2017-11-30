@@ -4,6 +4,7 @@ $(".toggle").on("click", function () {
 });
 
 /*Email Domain Datalist Helper*/
+/*CODE NEEDS TO BE CLEANED UP*/
 var EmailDomainSuggest = {
 	domains: ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"],
 	bindTo: $('#email'),
