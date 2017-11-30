@@ -3,13 +3,13 @@
 
 ## Installation & Usage
 - [Download latest release](https://github.com/digitdesign/digitxdk/archive/master.zip) or;
-- Clone the Digit XDK repository using the command below:
+- Clone this repository using the command below:
 ```sh
 git clone https://github.com/digitdesign/digitxdk.git
 ```
 
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/issues/new/) or submit PRs
+Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/issues/new/) or submit a PR
 
 #### Contributors
 - Anuj Gangwal
