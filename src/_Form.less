@@ -74,6 +74,12 @@ fieldset {
 	padding: 0;
 }
 
+input[type='date']::-webkit-clear-button,
+input[type='date']::-ms-clear {
+	display: none;
+	-webkit-appearance: none;
+}
+
 input[type='checkbox'],
 input[type='radio'] {
 	font-family: inherit;
