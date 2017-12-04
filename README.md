@@ -14,6 +14,7 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 #### Contributors
 - Anuj Gangwal
 - Shaan Shivanandan
+- Navneet Agrawal
 - Vivek Chaturvedi
 
 ## License
