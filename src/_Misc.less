@@ -11,15 +11,9 @@ button {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-input {
-	-webkit-transition: @transition;
-	transition: @transition;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-abbr {
-	text-decoration: none;
-	border-bottom: 1px solid @grey-50;
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
 }
 
 ::-moz-selection {
@@ -28,21 +22,4 @@ abbr {
 
 ::selection {
 	background: @amber-50;
-}
-
-::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-:-ms-input-placeholder {
-	color: @grey-300;
-}
-
-:-moz-placeholder {
-	color: @grey-300;
-}
-
-::-webkit-input-placeholder {
-	color: @grey-300;
 }
