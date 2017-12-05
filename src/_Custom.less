@@ -13,9 +13,9 @@
 		display: none;
 	}
 	& .brand {
+		height: 100%;
 		padding: 14px;
 		vertical-align: middle;
-		height: 100%;
 	}
 	& .left,
 	& .right {
@@ -39,27 +39,26 @@
 }
 
 a.link {
-	display: block;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border-bottom: 2px solid transparent;
+	color: @grey-600;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 22px 12px;
-	color: @grey-600;
-	text-decoration: none;
-	border-bottom: 2px solid transparent;
 	font-size: 1.3rem;
 	font-weight: 600;
+	padding: 22px 12px;
+	text-decoration: none;
 	white-space: nowrap;
 	&:hover {
-		color: @black;
 		border-bottom: 2px solid @grey-100;
+		color: @black;
 	}
 	&.active {
-		color: @black;
 		border-color: @amber-300;
+		color: @black;
 		&:hover {
 			border-color: @amber-300;
 		}
@@ -67,18 +66,18 @@ a.link {
 }
 
 img.brand {
-	margin-right: 34px;
-	font-size: 1em;
-	font-weight: 700;
-	color: @grey-900;
 	-webkit-box-align: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
+	color: @grey-900;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	font-size: 1em;
+	font-weight: 700;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
+	margin-right: 34px;
 	min-height: 32px;
 }
 
@@ -96,7 +95,6 @@ img.brand {
 
 //Section
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 section {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -110,8 +108,8 @@ section:first-child {
 // Hero Section
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .hero {
+	display: block;
 	padding: 80px;
 	margin: auto;
-	display: block;
 	max-width: 100%;
 }
