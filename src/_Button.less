@@ -44,8 +44,10 @@ input[type='submit'] {
 		text-decoration: none;
 	}
 	&:active {
-		-webkit-transform: scale(.97);
-		transform: scale(.97);
+		-webkit-filter: brightness(95%);
+		filter: brightness(95%);
+		-webkit-transition: none;
+		transition: none;
 	}
 	&[disabled] {
 		cursor: not-allowed;

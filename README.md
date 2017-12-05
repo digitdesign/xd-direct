@@ -1,15 +1,15 @@
-# Digit XDK: Experience Design Kit
+# Digit XD: Experience Design Framework
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
 ## Installation & Usage
-- [Download latest release](https://github.com/digitdesign/digitxdk/archive/master.zip) or;
+- [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
 - Clone this repository using the command below:
 ```sh
-git clone https://github.com/digitdesign/digitxdk.git
+git clone https://github.com/digitdesign/digitxd.git
 ```
 
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/issues/new/) or submit a PR
+Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR
 
 #### Contributors
 - Anuj Gangwal
@@ -24,4 +24,4 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxdk/is
 This project is created and maintained by [Digit Design](https://godigit.design/)
 
 ## Support
-[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XDK)
+[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD)
