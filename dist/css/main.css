@@ -1,4 +1,4 @@
-/*! Digit XDK v0.7.1 | (c) Go Digit General Insurance Ltd. and other contributors */
+/*! Digit XDK v0.7.3 | (c) Go Digit General Insurance Ltd. and other contributors */
 *,
 *:after,
 *:before {
@@ -773,6 +773,7 @@ img.brand:hover {
   opacity: 0.6;
 }
 .footer {
+  background: #FFF;
   border-top: 1px solid #EEE;
   font-size: 13px;
   padding: 18px;
@@ -780,6 +781,7 @@ img.brand:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 section {
   display: -webkit-box;
