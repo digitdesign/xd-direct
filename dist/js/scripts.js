@@ -39,3 +39,6 @@ var EmailDomainSuggest = {
 	}
 }
 EmailDomainSuggest.init();
+
+/*External Link Attributes*/
+$('a[href^=http]:not([href^=https://plus.godigit.com/])').attr('target', '_blank');
