@@ -693,8 +693,8 @@ button {
 }
 .navbar {
   background: #FFF;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,8 +798,8 @@ section:first-child {
   max-width: 100%;
 }
 .card {
-  -webkit-box-shadow: 0 4px 10px rgba(0, 4, 30, 0.08);
-  box-shadow: 0 4px 10px rgba(0, 4, 30, 0.08);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 4, 30, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 4, 30, 0.1);
   background: #FFF;
   border: 1px solid #EEE;
   border-radius: 3px;
