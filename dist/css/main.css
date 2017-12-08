@@ -272,7 +272,7 @@ svg:not(:root) {
 }
 code {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: monospace;
   font-size: 1.7rem;
   margin: 0 2px;
@@ -281,7 +281,7 @@ code {
 }
 pre {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: monospace;
   overflow-y: hidden;
 }
@@ -344,7 +344,7 @@ input[type='submit'] {
   backface-visibility: hidden;
   background-color: #FB0;
   border: 1px solid #FB0;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,7 +494,7 @@ select {
   appearance: none;
   background-color: transparent;
   border: 1px solid #BBB;
-  border-radius: 3px;
+  border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-sizing: inherit;
@@ -798,26 +798,32 @@ section:first-child {
   box-shadow: 0 1px 4px rgba(0, 4, 30, 0.1);
   background: #FFF;
   border: 1px solid #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 0;
   padding: 16px;
   width: 100%;
+}
+.card.empty {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .card.empty:before {
   content: "\1f47b";
   display: block;
   text-align: center;
   font-size: 2.8rem;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   opacity: 0.65;
 }
 .card.empty:after {
-  content: "Oops\0021  Nothing to show here\2026";
+  content: "Oops\0021  Nothing to see here\2026";
   font-size: 1.4rem;
   position: relative;
   display: block;
   text-align: center;
+}
+.card.empty:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 .nopadding {
   padding: 0;

@@ -1,6 +1,6 @@
 /*Navbar*/
 $(".toggle").on("click", function () {
-	$(".toggle").parent().toggleClass('active');
+	$(".toggle").parent().toggleClass("active");
 });
 
 /*Email extensions*/

@@ -121,26 +121,30 @@ section:first-child {
 	box-shadow: 0 1px 4px rgba(0, 4, 30, 0.1);
 	background: @white;
 	border: 1px solid @grey-50;
-	border-radius: @border-radius;
+	border-radius: @radius;
 	margin: 0;
 	padding: 16px;
 	width: 100%;
 	&.empty {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
 		&:before {
 			content: "\1f47b";
 			display: block;
 			text-align: center;
 			font-size: 2.8rem;
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
 			opacity: 0.65;
 		}
 		&:after {
-			content: "Oops\0021  Nothing to show here\2026";
+			content: "Oops\0021  Nothing to see here\2026";
 			font-size: 1.4rem;
 			position: relative;
 			display: block;
 			text-align: center;
+		}
+		&:hover {
+			-webkit-filter: none;
+			filter: none;
 		}
 	}
 }
