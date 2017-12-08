@@ -1,4 +1,4 @@
-/*! Digit XDK v0.7.5 | (c) Go Digit General Insurance Ltd. and other contributors */
+/*! Digit XDK v0.7.7 | (c) Go Digit General Insurance Ltd. and other contributors */
 *,
 *:after,
 *:before {
@@ -806,6 +806,19 @@ section:first-child {
   margin: 0;
   padding: 16px;
   width: 100%;
+}
+.card.empty:before {
+  content: "\1f47b";
+  display: block;
+  text-align: center;
+  font-size: 3.6rem;
+}
+.card.empty:after {
+  content: "Oops\0021  Nothing to show here\2026";
+  font-size: 1.4rem;
+  position: relative;
+  display: block;
+  text-align: center;
 }
 .nopadding {
   padding: 0;
