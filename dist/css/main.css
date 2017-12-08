@@ -777,15 +777,12 @@ img.brand:hover {
   border-top: 1px solid #EEE;
   font-size: 13px;
   padding: 18px;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1;
-}
-section {
-  display: inline-block;
 }
 section:first-child {
   margin-top: 3%;
@@ -810,10 +807,10 @@ section:first-child {
   content: "\1f47b";
   display: block;
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.65;
 }
 .card.empty:after {
   content: "Oops\0021  Nothing to show here\2026";

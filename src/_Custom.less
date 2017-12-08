@@ -91,7 +91,7 @@ img.brand {
 	border-top: 1px solid @grey-50;
 	font-size: 13px;
 	padding: 18px;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -101,10 +101,6 @@ img.brand {
 
 //Section
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-section {
-	display: inline-block;
-}
-
 section:first-child {
 	margin-top: 3%;
 }
@@ -129,22 +125,22 @@ section:first-child {
 	margin: 0;
 	padding: 16px;
 	width: 100%;
-}
-
-.card.empty:before {
-	content: "\1f47b";
-	display: block;
-	text-align: center;
-	font-size: 3.6rem;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	opacity: 0.7;
-}
-
-.card.empty:after {
-	content: "Oops\0021  Nothing to show here\2026";
-	font-size: 1.4rem;
-	position: relative;
-	display: block;
-	text-align: center;
+	&.empty {
+		&:before {
+			content: "\1f47b";
+			display: block;
+			text-align: center;
+			font-size: 2.8rem;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			opacity: 0.65;
+		}
+		&:after {
+			content: "Oops\0021  Nothing to show here\2026";
+			font-size: 1.4rem;
+			position: relative;
+			display: block;
+			text-align: center;
+		}
+	}
 }
