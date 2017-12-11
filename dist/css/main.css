@@ -1,4 +1,4 @@
-/*! Digit XD v0.8.4 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.8.6 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -479,14 +479,7 @@ input[type='submit'].ghost.loading:hover {
   color: transparent !important;
   cursor: default;
 }
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-input[type="date"],
+input[type],
 textarea,
 select {
   -webkit-appearance: none;
@@ -510,14 +503,7 @@ select {
   transition: all 70ms ease-in-out;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-input[type="email"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-inner-spin-button,
-input[type="password"]::-webkit-inner-spin-button,
-input[type="search"]::-webkit-inner-spin-button,
-input[type="tel"]::-webkit-inner-spin-button,
-input[type="text"]::-webkit-inner-spin-button,
-input[type="url"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-inner-spin-button,
+input[type]::-webkit-inner-spin-button,
 textarea::-webkit-inner-spin-button,
 select::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -525,14 +511,7 @@ select::-webkit-inner-spin-button {
   appearance: none;
   display: none;
 }
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="text"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
+input[type]:focus,
 textarea:focus,
 select:focus {
   border-color: #FA0;
@@ -540,14 +519,7 @@ select:focus {
   box-shadow: 0 0 0 2px #FFF2BD;
   outline: 0;
 }
-input[type="email"]:disabled,
-input[type="number"]:disabled,
-input[type="password"]:disabled,
-input[type="search"]:disabled,
-input[type="tel"]:disabled,
-input[type="text"]:disabled,
-input[type="url"]:disabled,
-input[type="date"]:disabled,
+input[type]:disabled,
 textarea:disabled,
 select:disabled {
   -webkit-backface-visibility: hidden;
