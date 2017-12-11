@@ -1,4 +1,4 @@
-/*! Digit XD v0.8.3 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.8.4 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -989,9 +989,9 @@ section:first-child {
   background-color: #8C4;
 }
 .noselect {
-  -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
 }
 @media only screen and (max-width: 768px) {
