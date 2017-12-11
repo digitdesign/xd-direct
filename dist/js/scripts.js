@@ -4,11 +4,11 @@ $(".toggle").on("click", function () {
 });
 
 /*Email extensions*/
-$('#email').on("keyup", function (event) {
+$("#email").on("keyup", function (event) {
 	var value = $(this).val();
-	var bindTo = $('#email');
+	var bindTo = $("#email");
 	var datalist = $("<datalist />", {
-		id: 'email-options'
+		id: "email-options"
 	}).insertAfter(bindTo);
 	bindTo.attr("list", "email-options");
 	var domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"];
@@ -23,11 +23,23 @@ $('#email').on("keyup", function (event) {
 	} else {}
 });
 
-/*External links*/
+/*Accessibility & Support*/
+$("img:not([alt])").attr("alt", "");
+
+function escapeHtml(unsafe) {
+	return unsafe
+		.replace(/“/g, "&#x201C;")
+		.replace(/”/g, "&#x201D;")
+		.replace(/&/g, "&#x26;")
+		.replace(/‘/g, "&#x2018;")
+		.replace(/’/g, "&#x2019;")
+		.replace(/…/g, "&#x2026;")
+		.replace(/–/g, "&#x2013;")
+		.replace(/—/g, "&#x2014;")
+		.replace(/•/g, "&#x2022;");
+}
+
 $("a[href^=http]:not([href^=godigit])").attr({
 	target: "blank",
 	rel: "nofollow noreferrer noopener"
 });
-
-/*Accessibility*/
-$("img:not([alt])").attr("alt", "");
