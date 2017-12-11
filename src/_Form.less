@@ -1,6 +1,6 @@
 // Form
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-input[type],
+input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="search"]),
 textarea,
 select {
 	-webkit-appearance: none;
@@ -81,13 +81,12 @@ textarea {
 	height: auto;
 }
 
-label,
-legend {
+label {
+	color: @grey-900;
 	display: inline-block;
 	font-size: 1.3rem;
 	font-weight: 500;
 	margin-bottom: 4px;
-	color: @grey-900;
 }
 
 .label-inline {
@@ -97,9 +96,11 @@ legend {
 }
 
 legend {
+	color: @grey-900;
 	font-size: 1.8rem;
-	font-weight: 800;
+	font-weight: bold;
 	padding: 0;
+	margin-bottom: 4px;
 }
 
 :-ms-input-placeholder {
