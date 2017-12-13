@@ -1,4 +1,4 @@
-/*! Digit XD v0.8.9 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.9.1 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -99,6 +99,8 @@ h6,
 }
 blockquote {
   border-left: 2px solid #DDD;
+  color: #666;
+  font-style: italic;
   margin: auto 0;
   padding: 10px 15px;
 }
@@ -274,7 +276,7 @@ code {
   background: #EEE;
   border-radius: 2px;
   font-family: monospace;
-  font-size: 1.7rem;
+  font-size: inherit;
   margin: 0 2px;
   padding: 2px 6px;
   white-space: nowrap;
@@ -284,6 +286,7 @@ pre {
   border-radius: 2px;
   font-family: monospace;
   overflow-y: hidden;
+  padding: 14px;
 }
 pre > code {
   display: block;
@@ -292,6 +295,10 @@ pre > code {
 }
 summary {
   display: list-item;
+}
+dt {
+  color: #222;
+  font-weight: 600;
 }
 dl,
 ol,
@@ -623,9 +630,19 @@ table {
   border-spacing: 0;
   width: 100%;
 }
+caption {
+  font-weight: 900;
+  margin-bottom: 18px;
+  text-align: left;
+  font-size: 1.8rem;
+}
+th {
+  font-weight: 600;
+  border-bottom-width: 2px;
+}
 td,
 th {
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #EEE;
   padding: 12px 16px;
   text-align: left;
 }
