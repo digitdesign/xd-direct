@@ -25,6 +25,14 @@ $("#email").on("keyup", function (event) {
 
 /*Accessibility & Support*/
 $("img:not([alt])").attr("alt", "");
+$("header:not([role])").attr("role", "banner");
+$("nav:not([role])").attr("role", "navigation");
+$("main:not([role])").attr("role", "main");
+$("section:not([role])").attr("role", "region");
+$("form:not([role])").attr("role", "form");
+$("article:not([role])").attr("role", "article");
+$("aside:not([role])").attr("role", "complementary");
+$("footer:not([role])").attr("role", "contentinfo");
 
 function escapeHtml(unsafe) {
 	return unsafe
