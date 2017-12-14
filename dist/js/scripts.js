@@ -1,9 +1,15 @@
-/*Navbar*/
+/*Responsive*/
+
+// Navbar
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 $(".toggle").on("click", function () {
 	$(".toggle").parent().toggleClass("active");
 });
 
-/*Email extensions*/
+/*Forms*/
+
+// Email Extensions Autocomplete
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("#email").on("keyup", function (event) {
 	var value = $(this).val();
 	var bindTo = $("#email");
@@ -24,32 +30,47 @@ $("#email").on("keyup", function (event) {
 });
 
 /*Accessibility & Support*/
+
+// Image ALT Text
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("img:not([alt])").attr("alt", "");
+
+// ARIA Roles
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("header:not([role])").attr("role", "banner");
 $("nav:not([role])").attr("role", "navigation");
 $("main:not([role])").attr("role", "main");
 $("#content:not([role])").attr("role", "main");
 $("section:not([role])").attr("role", "region");
 $("form:not([role])").attr("role", "form");
+$("button:not([role])").attr("role", "button");
+$("a:not([role])").attr("role", "link");
 $("output:not([role])").attr("role", "status");
 $("article:not([role])").attr("role", "article");
 $("aside:not([role])").attr("role", "complementary");
 $("footer:not([role])").attr("role", "contentinfo");
 
+// HTML HEX Entities
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 function escapeHtml(unsafe) {
 	return unsafe
 		.replace(/“/g, "&#x201C;")
 		.replace(/”/g, "&#x201D;")
-		.replace(/&/g, "&#x26;")
 		.replace(/‘/g, "&#x2018;")
 		.replace(/’/g, "&#x2019;")
-		.replace(/…/g, "&#x2026;")
 		.replace(/–/g, "&#x2013;")
 		.replace(/—/g, "&#x2014;")
-		.replace(/•/g, "&#x2022;");
+		.replace(/&/g, "&#x26;")
+		.replace(/…/g, "&#x2026;")
+		.replace(/•/g, "&#x2022;")
+		.replace(/₹/g, "&#x20B9;");
 }
 
-$("a[href^=http]:not([href^=godigit])").attr({
-	target: "blank",
+// External Link Treatment
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("a").filter(function () {
+	return this.hostname && this.hostname !== location.hostname;
+}).attr({
+	target: "_blank",
 	rel: "nofollow noreferrer noopener"
 });
