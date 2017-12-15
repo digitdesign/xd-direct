@@ -1,4 +1,4 @@
-/*! Digit XD v0.9.3 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.9.5 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -794,27 +794,20 @@ section:first-child {
   padding: 16px;
   width: 100%;
 }
-.card:empty {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
 .card:empty::before {
-  content: "\1f47b";
+  content: "\1F44B Oh snap\0021  Are you lost\003F";
   display: block;
-  font-size: 2.8rem;
-  opacity: 0.65;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
+  color: #222;
 }
 .card:empty::after {
-  content: "Oops\0021  Nothing to see here\2026";
+  content: "Keep calm\002C  light a fire\002C  and refresh to try again\2026";
   display: block;
   font-size: 1.4rem;
   position: relative;
   text-align: center;
-}
-.card:empty:hover {
-  -webkit-filter: none;
-  filter: none;
 }
 .nopadding {
   padding: 0;

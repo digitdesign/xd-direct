@@ -126,25 +126,20 @@ section:first-child {
 	padding: 16px;
 	width: 100%;
 	&:empty {
-		-webkit-filter: grayscale(100%);
-		filter: grayscale(100%);
 		&::before {
-			content: "\1f47b";
+			content: "\1F44B Oh snap\0021  Are you lost\003F";
 			display: block;
-			font-size: 2.8rem;
-			opacity: 0.65;
+			font-size: 1.5rem;
+			font-weight: 600;
 			text-align: center;
+			color: @grey-900;
 		}
 		&::after {
-			content: "Oops\0021  Nothing to see here\2026";
+			content: "Keep calm\002C  light a fire\002C  and refresh to try again\2026";
 			display: block;
 			font-size: 1.4rem;
 			position: relative;
 			text-align: center;
-		}
-		&:hover {
-			-webkit-filter: none;
-			filter: none;
 		}
 	}
 }
