@@ -1,4 +1,4 @@
-/*! Digit XD v0.9.2 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.9.3 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -780,9 +780,9 @@ section:first-child {
 }
 .hero {
   display: block;
-  padding: 80px;
   margin: auto;
   max-width: 100%;
+  padding: 80px;
 }
 .card {
   -webkit-box-shadow: 0 1px 4px rgba(0, 4, 30, 0.1);
@@ -794,25 +794,25 @@ section:first-child {
   padding: 16px;
   width: 100%;
 }
-.card.empty {
+.card:empty {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.card.empty:before {
+.card:empty::before {
   content: "\1f47b";
   display: block;
-  text-align: center;
   font-size: 2.8rem;
   opacity: 0.65;
-}
-.card.empty:after {
-  content: "Oops\0021  Nothing to see here\2026";
-  font-size: 1.4rem;
-  position: relative;
-  display: block;
   text-align: center;
 }
-.card.empty:hover {
+.card:empty::after {
+  content: "Oops\0021  Nothing to see here\2026";
+  display: block;
+  font-size: 1.4rem;
+  position: relative;
+  text-align: center;
+}
+.card:empty:hover {
   -webkit-filter: none;
   filter: none;
 }
@@ -1048,5 +1048,38 @@ section:first-child {
   }
   .modal-content {
     width: 80%;
+  }
+}
+@media print {
+  * {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  body {
+    color: #222;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  nav {
+    display: none !important;
+  }
+  footer {
+    border: none !important;
+  }
+  a {
+    color: #26F;
+    text-decoration: underline;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+  }
+  a[href]:after {
+    content: "\00A0(" attr(href) ")";
+    word-break: break-all;
+  }
+  a[href="#"],
+  a[href="javascript:"] {
+    content: "" !important;
   }
 }

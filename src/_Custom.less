@@ -109,9 +109,9 @@ section:first-child {
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .hero {
 	display: block;
-	padding: 80px;
 	margin: auto;
 	max-width: 100%;
+	padding: 80px;
 }
 
 // Card
@@ -125,21 +125,21 @@ section:first-child {
 	margin: 0;
 	padding: 16px;
 	width: 100%;
-	&.empty {
+	&:empty {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
-		&:before {
+		&::before {
 			content: "\1f47b";
 			display: block;
-			text-align: center;
 			font-size: 2.8rem;
 			opacity: 0.65;
+			text-align: center;
 		}
-		&:after {
+		&::after {
 			content: "Oops\0021  Nothing to see here\2026";
+			display: block;
 			font-size: 1.4rem;
 			position: relative;
-			display: block;
 			text-align: center;
 		}
 		&:hover {
