@@ -50,6 +50,9 @@ $("article:not([role])").attr("role", "article");
 $("aside:not([role])").attr("role", "complementary");
 $("footer:not([role])").attr("role", "contentinfo");
 
+// Input Autocomplete
+$("input:not([autocomplete])").attr("autocomplete", "on");
+
 // HTML HEX Entities
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function escapeHtml(unsafe) {

@@ -1,4 +1,4 @@
-/*! Digit XD v0.9.5 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v0.9.6 | (c) Go Digit General Insurance Ltd. and contributors */
 
 *,
 *:after,
@@ -754,20 +754,6 @@ th:last-child {
 	padding-right: 0;
 }
 
-.clearfix:after {
-	clear: both;
-	content: ' ';
-	display: table;
-}
-
-.float-left {
-	float: left;
-}
-
-.float-right {
-	float: right;
-}
-
 a,
 button {
 	-webkit-transition: all 70ms ease-in-out;
@@ -1112,6 +1098,29 @@ section:first-child {
 	z-index: 1;
 }
 
+.hidden {
+	display: none;
+}
+
+@media only screen and (max-width: 1200px),
+only screen and (max-width: 992px) {
+	.hidden-desktop {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.hidden-tablet {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.hidden-mobile {
+		display: none;
+	}
+}
+
 .bgwhite {
 	background: #FFF;
 	background-color: #FFF;
@@ -1149,10 +1158,21 @@ section:first-child {
 	user-select: none;
 }
 
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: table;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 @media only screen and (max-width: 768px) {
-	.modal-content {
-		width: 60%;
-	}
 	[class*=col-] {
 		width: 50%;
 		max-width: 100%;
@@ -1210,9 +1230,6 @@ section:first-child {
 	.row .col {
 		margin-bottom: inherit;
 		padding: 0 10px;
-	}
-	.modal-content {
-		width: 80%;
 	}
 }
 
