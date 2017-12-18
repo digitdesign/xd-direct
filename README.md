@@ -11,12 +11,6 @@ git clone https://github.com/digitdesign/digitxd.git
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR
 
-#### Contributors
-- Anuj Gangwal
-- Shaan Shivanandan
-- Navneet Agrawal
-- Vivek Chaturvedi
-
 ## License
 © 2016 – 2017 Go Digit General Insurance Ltd.
 
