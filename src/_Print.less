@@ -1,0 +1,35 @@
+// Print Styles
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@media print {
+	* {
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	body {
+		color: @grey-900;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12pt;
+		line-height: 1.4;
+	}
+	nav {
+		display: none !important;
+	}
+	footer {
+		border: none !important;
+	}
+	a {
+		color: @blue-A700;
+		text-decoration: underline;
+		-webkit-text-decoration-skip: ink;
+		text-decoration-skip: ink;
+	}
+	a[href]:after {
+		content: "\00A0(" attr(href) ")";
+		word-break: break-all;
+	}
+	a[href="#"],
+	a[href="javascript:"] {
+		content: "" !important;
+	}
+}
