@@ -77,3 +77,7 @@ $("a").filter(function () {
 	target: "_blank",
 	rel: "nofollow noreferrer noopener"
 });
+
+// Inline Styles Remover
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("* [style]").removeAttr("style");
