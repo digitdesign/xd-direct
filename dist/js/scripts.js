@@ -6,7 +6,62 @@ $(".toggle").on("click", function () {
 	$(".toggle").parent().toggleClass("active");
 });
 
-/*Forms*/
+/*Accessibility & Support*/
+
+// Image ALT Text
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("img:not([alt])").attr("alt", "");
+
+// Inline Styles Remover
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("* [style]").removeAttr("style");
+
+// Deprecated Attributes Remover
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("*").removeAttr("align background bgcolor border clear size");
+$("table").removeAttr("cellpadding cellspacing width height");
+$("link[type]").removeAttr("type");
+$("script[type]").removeAttr("type");
+
+// External Link Treatment
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("a").filter(function () {
+	return this.hostname && this.hostname !== location.hostname;
+}).attr({
+	target: "_blank",
+	rel: "nofollow noreferrer noopener"
+});
+
+// HTML HEX Entities
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function escapeHtml(unsafe) {
+	return unsafe
+		.replace(/“/g, "&#x201C;")
+		.replace(/”/g, "&#x201D;")
+		.replace(/‘/g, "&#x2018;")
+		.replace(/’/g, "&#x2019;")
+		.replace(/–/g, "&#x2013;")
+		.replace(/—/g, "&#x2014;")
+		.replace(/&/g, "&#x26;")
+		.replace(/…/g, "&#x2026;")
+		.replace(/•/g, "&#x2022;")
+		.replace(/₹/g, "&#x20B9;");
+}
+
+// ARIA Roles
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("header:not([role])").attr("role", "banner");
+$("nav:not([role])").attr("role", "navigation");
+$("main:not([role])").attr("role", "main");
+$("#content:not([role])").attr("role", "main");
+$("section:not([role])").attr("role", "region");
+$("form:not([role])").attr("role", "form");
+$("button:not([role])").attr("role", "button");
+$("a:not([role])").attr("role", "link");
+$("output:not([role])").attr("role", "status");
+$("article:not([role])").attr("role", "article");
+$("aside:not([role])").attr("role", "complementary");
+$("footer:not([role])").attr("role", "contentinfo");
 
 // Email Extensions Autocomplete
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -28,63 +83,3 @@ $("#email").on("keyup", function (event) {
 		datalist.html(newOptionsString);
 	} else {}
 });
-
-/*Accessibility & Support*/
-
-// Image ALT Text
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("img:not([alt])").attr("alt", "");
-
-// ARIA Roles
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("header:not([role])").attr("role", "banner");
-$("nav:not([role])").attr("role", "navigation");
-$("main:not([role])").attr("role", "main");
-$("#content:not([role])").attr("role", "main");
-$("section:not([role])").attr("role", "region");
-$("form:not([role])").attr("role", "form");
-$("button:not([role])").attr("role", "button");
-$("a:not([role])").attr("role", "link");
-$("output:not([role])").attr("role", "status");
-$("article:not([role])").attr("role", "article");
-$("aside:not([role])").attr("role", "complementary");
-$("footer:not([role])").attr("role", "contentinfo");
-
-// Input Autocomplete
-$("input:not([autocomplete])").attr("autocomplete", "on");
-
-// HTML HEX Entities
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-function escapeHtml(unsafe) {
-	return unsafe
-		.replace(/“/g, "&#x201C;")
-		.replace(/”/g, "&#x201D;")
-		.replace(/‘/g, "&#x2018;")
-		.replace(/’/g, "&#x2019;")
-		.replace(/–/g, "&#x2013;")
-		.replace(/—/g, "&#x2014;")
-		.replace(/&/g, "&#x26;")
-		.replace(/…/g, "&#x2026;")
-		.replace(/•/g, "&#x2022;")
-		.replace(/₹/g, "&#x20B9;");
-}
-
-// External Link Treatment
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("a").filter(function () {
-	return this.hostname && this.hostname !== location.hostname;
-}).attr({
-	target: "_blank",
-	rel: "nofollow noreferrer noopener"
-});
-
-// Inline Styles Remover
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("* [style]").removeAttr("style");
-
-// Deprecated Attributes Remover
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("*").removeAttr("align background bgcolor border clear size");
-$("table").removeAttr("cellpadding cellspacing width height");
-$("link[type]").removeAttr("type");
-$("script[type]").removeAttr("type");
