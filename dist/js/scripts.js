@@ -84,15 +84,7 @@ $("* [style]").removeAttr("style");
 
 // Deprecated Attributes Remover
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("* [align]").removeAttr("align");
-$("* [background]").removeAttr("background");
-$("* [bgcolor]").removeAttr("bgcolor");
-$("* [border]").removeAttr("border");
-$("* [clear]").removeAttr("clear");
-$("* [size]").removeAttr("size");
-$("table[cellpadding]").removeAttr("cellpadding");
-$("table[cellspacing]").removeAttr("cellspacing");
-$("table[width]").removeAttr("width");
-$("table[height]").removeAttr("height");
+$("*").removeAttr("align background bgcolor border clear size");
+$("table").removeAttr("cellpadding cellspacing width height");
 $("link[type]").removeAttr("type");
 $("script[type]").removeAttr("type");
