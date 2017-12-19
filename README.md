@@ -2,7 +2,7 @@
 # Digit XD: Experience Design Framework
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
-## Installation & Usage
+## Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
 - Clone this repository using the command below:
 ```sh
