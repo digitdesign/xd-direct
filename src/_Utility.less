@@ -1,3 +1,8 @@
+// Global variables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@radius: 3px;
+@transition: all 80ms ease-in-out;
+
 // Padding & Margin
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .nopadding {
@@ -276,4 +281,19 @@ only screen and (max-width: 992px) {
 
 .float-right {
 	float: right;
+}
+
+// Text Selection
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+::-moz-selection {
+	background: @amber-50;
+}
+
+::selection {
+	background: @amber-50;
 }
