@@ -1,4 +1,4 @@
-/*! Digit XD v1.0.1 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v1.0.2 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -779,6 +779,36 @@ section:first-child {
   font-size: 1.4rem;
   position: relative;
   text-align: center;
+}
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.input-addon {
+  height: auto;
+  padding: 9px 16px;
+  background: #F5F5F5;
+  border: 1px solid #CCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 1.4rem;
+}
+.input-group > input {
+  margin: 0;
+  border-radius: 0 3px 3px 0 !important;
 }
 .nopadding {
   padding: 0;
