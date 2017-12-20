@@ -432,57 +432,59 @@ input[type='submit'].loading:hover {
   color: transparent !important;
   cursor: default;
 }
-.button.ghost,
-button.ghost,
-input[type='button'].ghost,
-input[type='reset'].ghost,
-input[type='submit'].ghost {
+.button.secondary,
+button.secondary,
+input[type='button'].secondary,
+input[type='reset'].secondary,
+input[type='submit'].secondary {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   background-color: transparent;
+  border: none;
   color: #222;
-  border-color: #BBB;
 }
-.button.ghost:focus,
-button.ghost:focus,
-input[type='button'].ghost:focus,
-input[type='reset'].ghost:focus,
-input[type='submit'].ghost:focus,
-.button.ghost:hover,
-button.ghost:hover,
-input[type='button'].ghost:hover,
-input[type='reset'].ghost:hover,
-input[type='submit'].ghost:hover {
+.button.secondary:focus,
+button.secondary:focus,
+input[type='button'].secondary:focus,
+input[type='reset'].secondary:focus,
+input[type='submit'].secondary:focus,
+.button.secondary:hover,
+button.secondary:hover,
+input[type='button'].secondary:hover,
+input[type='reset'].secondary:hover,
+input[type='submit'].secondary:hover {
   background-color: #FB0;
   border-color: #FB0;
   color: #222;
 }
-.button.ghost[disabled]:focus,
-button.ghost[disabled]:focus,
-input[type='button'].ghost[disabled]:focus,
-input[type='reset'].ghost[disabled]:focus,
-input[type='submit'].ghost[disabled]:focus,
-.button.ghost[disabled]:hover,
-button.ghost[disabled]:hover,
-input[type='button'].ghost[disabled]:hover,
-input[type='reset'].ghost[disabled]:hover,
-input[type='submit'].ghost[disabled]:hover {
+.button.secondary[disabled]:focus,
+button.secondary[disabled]:focus,
+input[type='button'].secondary[disabled]:focus,
+input[type='reset'].secondary[disabled]:focus,
+input[type='submit'].secondary[disabled]:focus,
+.button.secondary[disabled]:hover,
+button.secondary[disabled]:hover,
+input[type='button'].secondary[disabled]:hover,
+input[type='reset'].secondary[disabled]:hover,
+input[type='submit'].secondary[disabled]:hover {
   border-color: inherit;
   cursor: not-allowed;
   color: #BBB;
 }
-.button.ghost.loading,
-button.ghost.loading,
-input[type='button'].ghost.loading,
-input[type='reset'].ghost.loading,
-input[type='submit'].ghost.loading {
+.button.secondary.loading,
+button.secondary.loading,
+input[type='button'].secondary.loading,
+input[type='reset'].secondary.loading,
+input[type='submit'].secondary.loading {
   background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
   color: transparent !important;
   pointer-events: none;
 }
-.button.ghost.loading:hover,
-button.ghost.loading:hover,
-input[type='button'].ghost.loading:hover,
-input[type='reset'].ghost.loading:hover,
-input[type='submit'].ghost.loading:hover {
+.button.secondary.loading:hover,
+button.secondary.loading:hover,
+input[type='button'].secondary.loading:hover,
+input[type='reset'].secondary.loading:hover,
+input[type='submit'].secondary.loading:hover {
   border-color: #BBB !important;
   color: transparent !important;
   cursor: default;
