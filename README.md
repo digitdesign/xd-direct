@@ -1,6 +1,6 @@
 ![Digit XD](https://privacdn.com/godigit/digit-xd-hero.png)
 # Digit XD: Experience Design Framework
-[![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg)]() [![CDNJS](https://img.shields.io/cdnjs/v/jquery.svg?style=plastic)]()
+[![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg)]() [![CDNJS](https://img.shields.io/cdnjs/v/jquery.svg)]()
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
 ## Installation
