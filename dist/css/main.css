@@ -798,34 +798,6 @@ section:first-child {
   position: relative;
   text-align: center;
 }
-[data-tooltip]:before {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  background-color: #000;
-  color: #FFF;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 2px;
-  padding: 0 16px;
-  content: attr(data-tooltip);
-  white-space: nowrap;
-  display: none;
-}
-[data-tooltip]:after {
-  position: absolute;
-  left: 15px;
-  top: -10px;
-  border-top: 7px solid #000;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  content: "";
-  display: none;
-}
-[data-tooltip]:hover:after,
-[data-tooltip]:hover:before {
-  display: block;
-}
 .nopadding {
   padding: 0;
 }
