@@ -1,4 +1,4 @@
-/*! Digit XD v1.0.2 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v1.0.3 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -347,10 +347,12 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #FB0;
-  border: 1px solid #FB0;
+  border: none;
   border-radius: 3px;
   color: #222;
   display: -webkit-box;
@@ -390,8 +392,8 @@ input[type='submit']:hover {
   background-color: #FD6;
   border-color: #FD6;
   color: #444;
-  outline: 0;
   cursor: pointer;
+  outline: 0;
   text-decoration: none;
 }
 .button:active,
@@ -453,9 +455,12 @@ button.secondary:hover,
 input[type='button'].secondary:hover,
 input[type='reset'].secondary:hover,
 input[type='submit'].secondary:hover {
-  background-color: #FB0;
-  border-color: #FB0;
-  color: #222;
+  background-color: #FD6;
+  border-color: #FD6;
+  color: #444;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
 }
 .button.secondary[disabled]:focus,
 button.secondary[disabled]:focus,
