@@ -274,7 +274,7 @@ svg:not(:root) {
 }
 code {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: monospace;
   font-size: inherit;
   margin: 0 2px;
@@ -283,7 +283,7 @@ code {
 }
 pre {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: monospace;
   overflow-y: hidden;
   padding: 14px;
@@ -353,7 +353,7 @@ input[type='submit'] {
   backface-visibility: hidden;
   background-color: #FB0;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,7 +502,7 @@ select {
   appearance: none;
   background-color: transparent;
   border: 1px solid #CCC;
-  border-radius: 3px;
+  border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-sizing: inherit;
@@ -767,7 +767,7 @@ section:first-child {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   background: #FFF;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 0;
   padding: 16px;
   width: 100%;
