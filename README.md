@@ -1,6 +1,6 @@
 ![Digit XD](https://privacdn.com/godigit/digit-xd-hero.png)
 # Digit XD: Experience Design Framework
-[![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg)]() [![GitHub last commit](https://img.shields.io/github/last-commit/digitdesign/digitxd.svg)]() [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/digitdesign/digitxd.svg)]() [![GitHub top language](https://img.shields.io/github/languages/top/digitdesign/digitxd.svg)]() [![GitHub issues](https://img.shields.io/github/issues/digitdesign/digitxd.svg)]() [![license](https://img.shields.io/github/license/digitdesign/digitxd.svg)]()
+[![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg?style=social)]() [![GitHub last commit](https://img.shields.io/github/last-commit/digitdesign/digitxd.svg?style=social)]() [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/digitdesign/digitxd.svg?style=social)]() [![GitHub top language](https://img.shields.io/github/languages/top/digitdesign/digitxd.svg?style=social)]() [![GitHub issues](https://img.shields.io/github/issues/digitdesign/digitxd.svg?style=social)]() [![license](https://img.shields.io/github/license/digitdesign/digitxd.svg?style=social)]()
 > Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.
 
 ## Installation
