@@ -1,4 +1,4 @@
-/*! Digit XD v1.0.3 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v1.0.4 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -347,8 +347,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #FB0;
@@ -439,8 +439,8 @@ button.secondary,
 input[type='button'].secondary,
 input[type='reset'].secondary,
 input[type='submit'].secondary {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1);
   background-color: transparent;
   border: none;
   color: #222;
@@ -663,8 +663,8 @@ th:last-child {
 }
 .navbar {
   background: #FFF;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
