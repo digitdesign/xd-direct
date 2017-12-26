@@ -11,6 +11,9 @@
 	overflow: hidden;
 	& .toggle {
 		display: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 	& .brand {
 		height: 100%;
@@ -89,7 +92,7 @@ img.brand {
 .footer {
 	background: @white;
 	border-top: 1px solid @grey-50;
-	font-size: 13px;
+	font-size: 1.3rem;
 	padding: 18px;
 	position: absolute;
 	bottom: 0;
@@ -176,4 +179,57 @@ section:first-child {
 .input-group > input {
 	margin: 0;
 	border-radius: 0 3px 3px 0 !important;
+}
+
+// Tooltips
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+[data-tooltip] {
+	position: relative;
+	cursor: help;
+
+	&::before,
+	::after {
+		position: absolute;
+		display: none;
+	}
+
+	&::before {
+		content: attr(data-tooltip);
+		background: @black;
+		color: @white;
+		font-size: 1.2rem;
+		padding: 6px 12px;
+		border-radius: @radius;
+		white-space: nowrap;
+		text-decoration: none;
+	}
+
+	&:hover::before,
+	:hover::after {
+		display: block;
+	}
+
+	&[data-placement="left"]::before {
+		top: -25%;
+		right: 100%;
+		margin-right: 10px;
+	}
+
+	&[data-placement="right"]::before {
+		top: -25%;
+		left: 100%;
+		margin-left: 10px;
+	}
+
+	&[data-placement="top"]::before {
+		bottom: 100%;
+		left: 0;
+		margin-bottom: 10px;
+	}
+
+	&[data-placement="bottom"]::before {
+		top: 100%;
+		left: 0;
+		margin-top: 10px;
+	}
 }
