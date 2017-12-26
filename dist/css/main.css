@@ -854,14 +854,14 @@ section:first-child {
   background-color: #CCC;
 }
 .accordion:after {
-  content: "\02795";
+  content: "\25BC";
   font-size: 1.2rem;
   color: #666;
   float: right;
   margin-left: 6px;
 }
 .accordion.active:after {
-  content: "\2796";
+  content: "\25B2";
 }
 .panel {
   padding: 0 18px;
