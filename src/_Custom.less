@@ -233,3 +233,28 @@ section:first-child {
 		margin-top: 10px;
 	}
 }
+
+// Accordians
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.accordion {
+	background-color: @grey-50;
+	color: @grey-800;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	-webkit-transition: @transition;
+	transition: @transition;
+	&.active,
+	:hover {
+		background-color: @grey-200;
+	}
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: @white;
+	display: none;
+}

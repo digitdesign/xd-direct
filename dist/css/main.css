@@ -836,6 +836,27 @@ section:first-child {
   left: 0;
   margin-top: 10px;
 }
+.accordion {
+  background-color: #EEE;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: all 80ms ease-in-out;
+  transition: all 80ms ease-in-out;
+}
+.accordion.active,
+.accordion :hover {
+  background-color: #CCC;
+}
+.panel {
+  padding: 0 18px;
+  background-color: #FFF;
+  display: none;
+}
 .nopadding {
   padding: 0;
 }
