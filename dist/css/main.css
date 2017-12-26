@@ -837,6 +837,7 @@ section:first-child {
   margin-top: 10px;
 }
 .accordion {
+  background: #FFF;
   color: #444;
   cursor: pointer;
   display: inline-block;
