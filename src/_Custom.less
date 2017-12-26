@@ -251,10 +251,23 @@ section:first-child {
 	:hover {
 		background-color: @grey-200;
 	}
+	&:after {
+		content: "\02795";
+		font-size: 1.2rem;
+		color: @grey-700;
+		float: right;
+		margin-left: 6px;
+	}
+	&.active:after {
+		content: "\2796";
+	}
 }
 
 .panel {
 	padding: 0 18px;
-	background-color: @white;
-	display: none;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height @transition;
+	transition: max-height @transition;
 }

@@ -852,10 +852,23 @@ section:first-child {
 .accordion :hover {
   background-color: #CCC;
 }
+.accordion:after {
+  content: "\02795";
+  font-size: 1.2rem;
+  color: #666;
+  float: right;
+  margin-left: 6px;
+}
+.accordion.active:after {
+  content: "\2796";
+}
 .panel {
   padding: 0 18px;
-  background-color: #FFF;
-  display: none;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height all 80ms ease-in-out;
+  transition: max-height all 80ms ease-in-out;
 }
 .nopadding {
   padding: 0;
