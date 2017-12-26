@@ -837,9 +837,9 @@ section:first-child {
   margin-top: 10px;
 }
 .accordion {
-  background-color: #EEE;
   color: #444;
   cursor: pointer;
+  display: inline-block;
   padding: 18px;
   width: 100%;
   text-align: left;
@@ -867,8 +867,8 @@ section:first-child {
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height all 80ms ease-in-out;
-  transition: max-height all 80ms ease-in-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 .nopadding {
   padding: 0;
