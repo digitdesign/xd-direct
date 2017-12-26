@@ -864,7 +864,11 @@ section:first-child {
 }
 .accordion:focus {
   background: #EEE;
-  border-collapse: #EEE !important;
+  border-color: #EEE !important;
+}
+.accordion.active {
+  background: #EEE;
+  border-color: #EEE !important;
 }
 .accordion.active:after {
   content: "\25B2";
