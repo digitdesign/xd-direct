@@ -248,9 +248,8 @@ section:first-child {
 	outline: none;
 	-webkit-transition: @transition;
 	transition: @transition;
-	&.active,
-	:hover {
-		background-color: @grey-200;
+	&:hover {
+		background: @grey-50;
 	}
 	&:after {
 		content: "\25BC";
@@ -259,14 +258,16 @@ section:first-child {
 		float: right;
 		margin-left: 6px;
 	}
-	&.active:after {
-		content: "\25B2";
+	&.active {
+		&:after {
+			content: "\25B2";
+		}
 	}
 }
 
 .panel {
 	padding: 0 18px;
-	background-color: white;
+	background-color: @white;
 	max-height: 0;
 	overflow: hidden;
 	-webkit-transition: max-height 0.2s ease-out;

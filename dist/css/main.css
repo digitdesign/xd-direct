@@ -849,9 +849,8 @@ section:first-child {
   -webkit-transition: all 80ms ease-in-out;
   transition: all 80ms ease-in-out;
 }
-.accordion.active,
-.accordion :hover {
-  background-color: #CCC;
+.accordion:hover {
+  background: #EEE;
 }
 .accordion:after {
   content: "\25BC";
@@ -865,7 +864,7 @@ section:first-child {
 }
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #FFF;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
