@@ -59,9 +59,12 @@ input[type="radio"] {
 	font-family: inherit;
 	display: inline;
 	&:disabled {
-		color: @grey-500;
-		border-style: dotted;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		background: @grey-50;
+		border-color: @grey-50;
 		cursor: not-allowed;
+		opacity: .6;
 	}
 }
 
@@ -76,9 +79,9 @@ fieldset {
 }
 
 textarea {
+	height: auto;
 	overflow: auto;
 	resize: none;
-	height: auto;
 }
 
 label {
@@ -99,18 +102,12 @@ legend {
 	color: @grey-900;
 	font-size: 1.8rem;
 	font-weight: bold;
-	padding: 0;
 	margin-bottom: 4px;
+	padding: 0;
 }
 
-:-ms-input-placeholder {
-	color: @grey-300;
-}
-
-:-moz-placeholder {
-	color: @grey-300;
-}
-
+:-ms-input-placeholder,
+:-moz-placeholder,
 ::-webkit-input-placeholder {
 	color: @grey-300;
 }

@@ -1,4 +1,4 @@
-/*! Digit XD v1.0.5 | (c) Go Digit General Insurance Ltd. and contributors */
+/*! Digit XD v1.0.6 | (c) Go Digit General Insurance Ltd. and contributors */
 *,
 *:after,
 *:before {
@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF;
   color: #444;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6em;
   line-height: 1.65;
   margin: 0;
@@ -102,7 +102,7 @@ blockquote {
   color: #666;
   font-style: italic;
   margin: auto 0;
-  padding: 10px 15px;
+  padding: 10px 16px;
 }
 blockquote *:last-child {
   margin-bottom: 0;
@@ -275,7 +275,7 @@ svg:not(:root) {
 code {
   background: #EEE;
   border-radius: 2px;
-  font-family: monospace;
+  font-family: Courier, monospace;
   font-size: inherit;
   margin: 0 2px;
   padding: 2px 6px;
@@ -284,13 +284,13 @@ code {
 pre {
   background: #EEE;
   border-radius: 2px;
-  font-family: monospace;
+  font-family: Courier, monospace;
   overflow-y: hidden;
   padding: 14px;
 }
 pre > code {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 16px;
   white-space: pre;
 }
 summary {
@@ -327,11 +327,11 @@ ul {
 }
 a {
   color: #FA0;
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 80ms ease-in-out;
   transition: all 80ms ease-in-out;
-  cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a:focus,
@@ -346,11 +346,9 @@ a:hover {
 }
 .button,
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
+input[type="button, reset, submit"] {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #FB0;
@@ -383,14 +381,10 @@ input[type='submit'] {
 }
 .button:focus,
 button:focus,
-input[type='button']:focus,
-input[type='reset']:focus,
-input[type='submit']:focus,
+input[type="button, reset, submit"]:focus,
 .button:hover,
 button:hover,
-input[type='button']:hover,
-input[type='reset']:hover,
-input[type='submit']:hover {
+input[type="button, reset, submit"]:hover {
   background-color: #FD6;
   border-color: #FD6;
   color: #444;
@@ -400,9 +394,7 @@ input[type='submit']:hover {
 }
 .button:active,
 button:active,
-input[type='button']:active,
-input[type='reset']:active,
-input[type='submit']:active {
+input[type="button, reset, submit"]:active {
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
   -webkit-transition: none;
@@ -410,37 +402,29 @@ input[type='submit']:active {
 }
 .button[disabled],
 button[disabled],
-input[type='button'][disabled],
-input[type='reset'][disabled],
-input[type='submit'][disabled] {
-  cursor: not-allowed;
+input[type="button, reset, submit"][disabled] {
   background: #DDD;
   border-color: #DDD;
   color: #666;
+  cursor: not-allowed;
 }
 .button.loading,
 button.loading,
-input[type='button'].loading,
-input[type='reset'].loading,
-input[type='submit'].loading {
+input[type="button, reset, submit"].loading {
   background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23444%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
   color: transparent !important;
   pointer-events: none;
 }
 .button.loading:hover,
 button.loading:hover,
-input[type='button'].loading:hover,
-input[type='reset'].loading:hover,
-input[type='submit'].loading:hover {
+input[type="button, reset, submit"].loading:hover {
   border-color: #FB0 !important;
   color: transparent !important;
   cursor: default;
 }
 .button.secondary,
 button.secondary,
-input[type='button'].secondary,
-input[type='reset'].secondary,
-input[type='submit'].secondary {
+input[type="button, reset, submit"].secondary {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1);
   background-color: transparent;
@@ -449,14 +433,10 @@ input[type='submit'].secondary {
 }
 .button.secondary:focus,
 button.secondary:focus,
-input[type='button'].secondary:focus,
-input[type='reset'].secondary:focus,
-input[type='submit'].secondary:focus,
+input[type="button, reset, submit"].secondary:focus,
 .button.secondary:hover,
 button.secondary:hover,
-input[type='button'].secondary:hover,
-input[type='reset'].secondary:hover,
-input[type='submit'].secondary:hover {
+input[type="button, reset, submit"].secondary:hover {
   background-color: #FD6;
   border-color: #FD6;
   color: #444;
@@ -466,32 +446,24 @@ input[type='submit'].secondary:hover {
 }
 .button.secondary[disabled]:focus,
 button.secondary[disabled]:focus,
-input[type='button'].secondary[disabled]:focus,
-input[type='reset'].secondary[disabled]:focus,
-input[type='submit'].secondary[disabled]:focus,
+input[type="button, reset, submit"].secondary[disabled]:focus,
 .button.secondary[disabled]:hover,
 button.secondary[disabled]:hover,
-input[type='button'].secondary[disabled]:hover,
-input[type='reset'].secondary[disabled]:hover,
-input[type='submit'].secondary[disabled]:hover {
+input[type="button, reset, submit"].secondary[disabled]:hover {
   border-color: inherit;
-  cursor: not-allowed;
   color: #BBB;
+  cursor: not-allowed;
 }
 .button.secondary.loading,
 button.secondary.loading,
-input[type='button'].secondary.loading,
-input[type='reset'].secondary.loading,
-input[type='submit'].secondary.loading {
+input[type="button, reset, submit"].secondary.loading {
   background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
   color: transparent !important;
   pointer-events: none;
 }
 .button.secondary.loading:hover,
 button.secondary.loading:hover,
-input[type='button'].secondary.loading:hover,
-input[type='reset'].secondary.loading:hover,
-input[type='submit'].secondary.loading:hover {
+input[type="button, reset, submit"].secondary.loading:hover {
   border-color: #BBB !important;
   color: transparent !important;
   cursor: default;
@@ -559,9 +531,12 @@ input[type="radio"] {
 }
 input[type="checkbox"]:disabled,
 input[type="radio"]:disabled {
-  color: #999;
-  border-style: dotted;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #EEE;
+  border-color: #EEE;
   cursor: not-allowed;
+  opacity: .6;
 }
 select {
   background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%204%205'%3E%3Cpath%20fill%3D'%23999'%20d%3D'M2%200L0%202h4zm0%205L0%203h4z'%2F%3E%3C%2Fsvg%3E") no-repeat right 4px center / 26px 10px;
@@ -572,9 +547,9 @@ fieldset {
   padding: 0;
 }
 textarea {
+  height: auto;
   overflow: auto;
   resize: none;
-  height: auto;
 }
 label {
   color: #222;
@@ -592,15 +567,11 @@ legend {
   color: #222;
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 0;
   margin-bottom: 4px;
+  padding: 0;
 }
-:-ms-input-placeholder {
-  color: #BBB;
-}
-:-moz-placeholder {
-  color: #BBB;
-}
+:-ms-input-placeholder,
+:-moz-placeholder,
 ::-webkit-input-placeholder {
   color: #BBB;
 }
@@ -620,9 +591,7 @@ li {
 fieldset,
 input,
 select,
-textarea {
-  margin-bottom: 1.5rem;
-}
+textarea,
 blockquote,
 dl,
 figure,
@@ -639,6 +608,9 @@ table {
   border-spacing: 0;
   width: 100%;
 }
+tr {
+  border-bottom: 1px solid #EEE;
+}
 caption {
   font-weight: 900;
   margin-bottom: 18px;
@@ -647,11 +619,10 @@ caption {
 }
 th {
   font-weight: 600;
-  border-bottom-width: 2px;
+  border-bottom: 2px solid #EEE;
 }
 td,
 th {
-  border-bottom: 1px solid #EEE;
   padding: 12px 16px;
   text-align: left;
 }
@@ -886,31 +857,31 @@ section:first-child {
 .capitalize {
   text-transform: capitalize;
 }
-.fw1 {
+.fw100 {
   font-weight: 100;
 }
-.fw2 {
+.fw200 {
   font-weight: 200;
 }
-.fw3 {
+.fw300 {
   font-weight: 300;
 }
-.fw4 {
+.fw400 {
   font-weight: 400;
 }
-.fw5 {
+.fw500 {
   font-weight: 500;
 }
-.fw6 {
+.fw600 {
   font-weight: 600;
 }
-.fw7 {
+.fw700 {
   font-weight: 700;
 }
-.fw8 {
+.fw800 {
   font-weight: 800;
 }
-.fw9 {
+.fw900 {
   font-weight: 900;
 }
 .fs25 {
@@ -1147,7 +1118,7 @@ section:first-child {
   }
   body {
     color: #222;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, serif;
     font-size: 12pt;
     line-height: 1.4;
   }
@@ -1164,7 +1135,7 @@ section:first-child {
     text-decoration-skip: ink;
   }
   a[href]:after {
-    content: "\00A0(" attr(href) ")";
+    content: '\00A0(" attr(href) ")';
     word-break: break-all;
   }
   a[href="#"],
