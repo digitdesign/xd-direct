@@ -838,6 +838,9 @@ section:first-child {
 }
 .accordion {
   background: #FFF;
+  border: 1px solid #DDD !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   color: #444;
   cursor: pointer;
   display: inline-block;
@@ -858,6 +861,10 @@ section:first-child {
   color: #666;
   float: right;
   margin-left: 6px;
+}
+.accordion:focus {
+  background: #EEE;
+  border-collapse: #EEE !important;
 }
 .accordion.active:after {
   content: "\25B2";

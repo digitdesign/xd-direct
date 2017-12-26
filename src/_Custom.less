@@ -238,6 +238,9 @@ section:first-child {
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .accordion {
 	background: @white;
+	border: 1px solid @grey-100 !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 	color: @grey-800;
 	cursor: pointer;
 	display: inline-block;
@@ -257,6 +260,10 @@ section:first-child {
 		color: @grey-700;
 		float: right;
 		margin-left: 6px;
+	}
+	&:focus {
+		background: @grey-50;
+		border-collapse: @grey-50 !important;
 	}
 	&.active {
 		&:after {
