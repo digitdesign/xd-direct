@@ -836,51 +836,6 @@ section:first-child {
   left: 0;
   margin-top: 10px;
 }
-.accordion {
-  background: #FFF;
-  border: 1px solid #DDD !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #444;
-  cursor: pointer;
-  display: inline-block;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  -webkit-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
-}
-.accordion:hover {
-  background: #EEE;
-}
-.accordion:after {
-  content: "\25BC";
-  font-size: 1.2rem;
-  color: #666;
-  float: right;
-  margin-left: 6px;
-}
-.accordion:focus {
-  background: #EEE;
-  border-color: #EEE !important;
-}
-.accordion.active {
-  background: #EEE;
-  border-color: #EEE !important;
-}
-.accordion.active:after {
-  content: "\25B2";
-}
-.panel {
-  padding: 0 18px;
-  background-color: #FFF;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
 .nopadding {
   padding: 0;
 }
