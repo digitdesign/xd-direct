@@ -1,12 +1,10 @@
-/*Responsive*/
+/*! Digit XD Scripts | (c) Go Digit General Insurance Ltd. and Contributors */
 
 // Navbar
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $(".toggle").on("click", function () {
 	$(".toggle").parent().toggleClass("active");
 });
-
-/*Accessibility & Support*/
 
 // Image ALT Text
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
