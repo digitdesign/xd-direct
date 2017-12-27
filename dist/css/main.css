@@ -330,8 +330,8 @@ a {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
+  -webkit-transition: all 40ms ease-in-out;
+  transition: all 40ms ease-in-out;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a:focus,
@@ -376,8 +376,8 @@ input[type="submit"] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
+  -webkit-transition: all 40ms ease-in-out;
+  transition: all 40ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
   min-height: 44px;
 }
@@ -513,8 +513,8 @@ select {
   font-size: 1.4rem;
   color: #222;
   text-overflow: ellipsis;
-  -webkit-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
+  -webkit-transition: all 40ms ease-in-out;
+  transition: all 40ms ease-in-out;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"])::-webkit-inner-spin-button,
