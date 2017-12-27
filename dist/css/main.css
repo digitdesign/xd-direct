@@ -21,7 +21,7 @@ body {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6em;
-  line-height: 1.65;
+  line-height: 1.6;
   margin: 0;
 }
 abbr {
@@ -98,7 +98,7 @@ h6,
   font-size: 1.6rem;
 }
 blockquote {
-  border-left: 2px solid #DDD;
+  border-left: 1px solid #DDD;
   color: #666;
   font-style: italic;
   margin: auto 0;
@@ -346,7 +346,9 @@ a:hover {
 }
 .button,
 button,
-input[type="button, reset, submit"] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
   -webkit-backface-visibility: hidden;
@@ -355,6 +357,7 @@ input[type="button, reset, submit"] {
   border: none;
   border-radius: 2px;
   color: #222;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,25 +371,27 @@ input[type="button, reset, submit"] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  margin: 1rem;
+  margin: 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 80ms ease-in-out;
   transition: all 80ms ease-in-out;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   min-height: 44px;
 }
 .button:focus,
 button:focus,
-input[type="button, reset, submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
 .button:hover,
 button:hover,
-input[type="button, reset, submit"]:hover {
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
   background-color: #FD6;
-  border-color: #FD6;
   color: #444;
   cursor: pointer;
   outline: 0;
@@ -394,7 +399,9 @@ input[type="button, reset, submit"]:hover {
 }
 .button:active,
 button:active,
-input[type="button, reset, submit"]:active {
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
   -webkit-transition: none;
@@ -402,29 +409,35 @@ input[type="button, reset, submit"]:active {
 }
 .button[disabled],
 button[disabled],
-input[type="button, reset, submit"][disabled] {
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled] {
   background: #DDD;
-  border-color: #DDD;
   color: #666;
   cursor: not-allowed;
 }
 .button.loading,
 button.loading,
-input[type="button, reset, submit"].loading {
+input[type="button"].loading,
+input[type="reset"].loading,
+input[type="submit"].loading {
   background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23444%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
   color: transparent !important;
   pointer-events: none;
 }
 .button.loading:hover,
 button.loading:hover,
-input[type="button, reset, submit"].loading:hover {
-  border-color: #FB0 !important;
+input[type="button"].loading:hover,
+input[type="reset"].loading:hover,
+input[type="submit"].loading:hover {
   color: transparent !important;
   cursor: default;
 }
 .button.secondary,
 button.secondary,
-input[type="button, reset, submit"].secondary {
+input[type="button"].secondary,
+input[type="reset"].secondary,
+input[type="submit"].secondary {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -433,10 +446,14 @@ input[type="button, reset, submit"].secondary {
 }
 .button.secondary:focus,
 button.secondary:focus,
-input[type="button, reset, submit"].secondary:focus,
+input[type="button"].secondary:focus,
+input[type="reset"].secondary:focus,
+input[type="submit"].secondary:focus,
 .button.secondary:hover,
 button.secondary:hover,
-input[type="button, reset, submit"].secondary:hover {
+input[type="button"].secondary:hover,
+input[type="reset"].secondary:hover,
+input[type="submit"].secondary:hover {
   background-color: #FD6;
   border-color: #FD6;
   color: #444;
@@ -446,24 +463,32 @@ input[type="button, reset, submit"].secondary:hover {
 }
 .button.secondary[disabled]:focus,
 button.secondary[disabled]:focus,
-input[type="button, reset, submit"].secondary[disabled]:focus,
+input[type="button"].secondary[disabled]:focus,
+input[type="reset"].secondary[disabled]:focus,
+input[type="submit"].secondary[disabled]:focus,
 .button.secondary[disabled]:hover,
 button.secondary[disabled]:hover,
-input[type="button, reset, submit"].secondary[disabled]:hover {
+input[type="button"].secondary[disabled]:hover,
+input[type="reset"].secondary[disabled]:hover,
+input[type="submit"].secondary[disabled]:hover {
   border-color: inherit;
   color: #BBB;
   cursor: not-allowed;
 }
 .button.secondary.loading,
 button.secondary.loading,
-input[type="button, reset, submit"].secondary.loading {
+input[type="button"].secondary.loading,
+input[type="reset"].secondary.loading,
+input[type="submit"].secondary.loading {
   background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
   color: transparent !important;
   pointer-events: none;
 }
 .button.secondary.loading:hover,
 button.secondary.loading:hover,
-input[type="button, reset, submit"].secondary.loading:hover {
+input[type="button"].secondary.loading:hover,
+input[type="reset"].secondary.loading:hover,
+input[type="submit"].secondary.loading:hover {
   border-color: #BBB !important;
   color: transparent !important;
   cursor: default;
