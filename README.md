@@ -5,7 +5,7 @@
 
 ## Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
-- Clone this repository using the command below:
+- Clone the repository using the command below:
 ```sh
 git clone https://github.com/digitdesign/digitxd.git
 ```
