@@ -1,4 +1,4 @@
-/*! Digit XD v1.1.0 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.1.1 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *:after,
 *:before {
@@ -813,6 +813,10 @@ section:first-child {
   border-right: none;
   border-radius: 2px 0 0 2px;
   font-size: 1.4rem;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .input-group > input {
   margin: 0;
