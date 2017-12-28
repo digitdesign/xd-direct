@@ -1,4 +1,4 @@
-/*! Digit XD v1.1.1 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.1.2 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *:after,
 *:before {
@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF;
   color: #444;
-  font-family: "Muli", sans-serif;
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   line-height: 1.6;
   margin: 0;
@@ -275,7 +275,7 @@ svg:not(:root) {
 code {
   background: #EEE;
   border-radius: 2px;
-  font-family: Courier, monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: inherit;
   margin: 0 2px;
   padding: 2px 6px;
@@ -284,7 +284,7 @@ code {
 pre {
   background: #EEE;
   border-radius: 2px;
-  font-family: Courier, monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow-y: hidden;
   padding: 14px;
 }
@@ -349,8 +349,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #FB0;
@@ -438,8 +438,8 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   border: none;
   color: #222;
@@ -661,8 +661,8 @@ th:last-child {
 }
 .navbar {
   background: #FFF;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,8 +765,8 @@ section:first-child {
   padding: 80px;
 }
 .card {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   background: #FFF;
   border-radius: 2px;
   margin: 0;
@@ -865,11 +865,11 @@ section:first-child {
   left: 0;
   margin-top: 10px;
 }
-.nopadding {
-  padding: 0;
-}
-.nomargin {
+.margin-none {
   margin: 0;
+}
+.padding-none {
+  padding: 0;
 }
 .fullwidth {
   width: 100%;
@@ -877,64 +877,64 @@ section:first-child {
 .fullheight {
   height: 100%;
 }
-.uppercase {
+.text-uppercase {
   text-transform: uppercase;
 }
-.lowercase {
+.text-lowercase {
   text-transform: lowercase;
 }
-.capitalize {
+.text-capitalize {
   text-transform: capitalize;
 }
-.fw100 {
+.font-weight-100 {
   font-weight: 100;
 }
-.fw200 {
+.font-weight-200 {
   font-weight: 200;
 }
-.fw300 {
+.font-weight-300 {
   font-weight: 300;
 }
-.fw400 {
+.font-weight-400 {
   font-weight: 400;
 }
-.fw500 {
+.font-weight-500 {
   font-weight: 500;
 }
-.fw600 {
+.font-weight-600 {
   font-weight: 600;
 }
-.fw700 {
+.font-weight-700 {
   font-weight: 700;
 }
-.fw800 {
+.font-weight-800 {
   font-weight: 800;
 }
-.fw900 {
+.font-weight-900 {
   font-weight: 900;
 }
-.fs25 {
+.font-size-25 {
   font-size: 25%;
 }
-.fs50 {
+.font-size-50 {
   font-size: 50%;
 }
-.fs75 {
+.font-size-75 {
   font-size: 75%;
 }
-.fs100 {
+.font-size-100 {
   font-size: 100%;
 }
-.fs125 {
+.font-size-125 {
   font-size: 125%;
 }
-.fs150 {
+.font-size-150 {
   font-size: 150%;
 }
-.fs175 {
+.font-size-175 {
   font-size: 175%;
 }
-.fs200 {
+.font-size-200 {
   font-size: 200%;
 }
 .material-icons {
@@ -1004,47 +1004,50 @@ section:first-child {
   width: 100%;
   z-index: 1;
 }
+.show {
+  display: block !important;
+}
 .hidden {
-  display: none;
+  display: none !important;
 }
-@media only screen and (max-width: 1200px), only screen and (max-width: 992px) {
-  .hidden-desktop {
-    display: none;
-  }
+.invisible {
+  visibility: hidden;
 }
-@media only screen and (max-width: 768px) {
-  .hidden-tablet {
-    display: none;
-  }
+.bg-muted {
+  background-color: #AAA;
 }
-@media only screen and (max-width: 480px) {
-  .hidden-mobile {
-    display: none;
-  }
+.bg-primary {
+  background-color: #FB0;
 }
-.bgwhite {
-  background: #FFF;
-  background-color: #FFF;
+.bg-success {
+  background-color: #8C4;
 }
-.bggrey {
-  background: #EEE;
-  background-color: #EEE;
-}
-.danger {
-  background: #F43;
-  background-color: #F43;
-}
-.warning {
-  background: #FA0;
-  background-color: #FA0;
-}
-.info {
-  background: #29F;
+.bg-info {
   background-color: #29F;
 }
-.success {
-  background: #8C4;
-  background-color: #8C4;
+.bg-warning {
+  background-color: #F61;
+}
+.bg-danger {
+  background-color: #F43;
+}
+.text-muted {
+  color: #AAA;
+}
+.text-primary {
+  color: #FB0;
+}
+.text-success {
+  color: #8C4;
+}
+.text-info {
+  color: #29F;
+}
+.text-warning {
+  color: #F61;
+}
+.text-danger {
+  color: #F43;
 }
 .noselect {
   -ms-user-select: none;
@@ -1052,16 +1055,11 @@ section:first-child {
   -webkit-user-select: none;
   user-select: none;
 }
-.clearfix:after {
-  clear: both;
-  content: ' ';
-  display: table;
+.pull-left {
+  float: left !important;
 }
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
+.pull-right {
+  float: right !important;
 }
 ::-moz-focus-inner {
   border: 0;
@@ -1147,7 +1145,7 @@ section:first-child {
   }
   body {
     color: #222;
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 12pt;
     line-height: 1.4;
   }

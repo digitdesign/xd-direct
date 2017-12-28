@@ -1,18 +1,11 @@
-// Global variables
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-@radius: 2px;
-@radius-left: 2px 0 0 2px;
-@radius-right: 0 2px 2px 0;
-@transition: all 40ms ease-in-out;
-
 // Padding & Margin
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.nopadding {
-	padding: 0;
+.margin-none {
+	margin: 0;
 }
 
-.nomargin {
-	margin: 0;
+.padding-none {
+	padding: 0;
 }
 
 // Height & Width
@@ -27,87 +20,87 @@
 
 // Text Transform
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.uppercase {
+.text-uppercase {
 	text-transform: uppercase;
 }
 
-.lowercase {
+.text-lowercase {
 	text-transform: lowercase;
 }
 
-.capitalize {
+.text-capitalize {
 	text-transform: capitalize;
 }
 
 // Font Weights
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.fw100 {
+.font-weight-100 {
 	font-weight: 100;
 }
 
-.fw200 {
+.font-weight-200 {
 	font-weight: 200;
 }
 
-.fw300 {
+.font-weight-300 {
 	font-weight: 300;
 }
 
-.fw400 {
+.font-weight-400 {
 	font-weight: 400;
 }
 
-.fw500 {
+.font-weight-500 {
 	font-weight: 500;
 }
 
-.fw600 {
+.font-weight-600 {
 	font-weight: 600;
 }
 
-.fw700 {
+.font-weight-700 {
 	font-weight: 700;
 }
 
-.fw800 {
+.font-weight-800 {
 	font-weight: 800;
 }
 
-.fw900 {
+.font-weight-900 {
 	font-weight: 900;
 }
 
 // Font Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.fs25 {
+.font-size-25 {
 	font-size: 25%;
 }
 
-.fs50 {
+.font-size-50 {
 	font-size: 50%;
 }
 
-.fs75 {
+.font-size-75 {
 	font-size: 75%;
 }
 
-.fs100 {
+.font-size-100 {
 	font-size: 100%;
 }
 
-.fs125 {
+.font-size-125 {
 	font-size: 125%;
 }
 
-.fs150 {
+.font-size-150 {
 	font-size: 150%;
 }
 
-.fs175 {
+.font-size-175 {
 	font-size: 175%;
 }
 
-.fs200 {
+.font-size-200 {
 	font-size: 200%;
 }
 
@@ -198,61 +191,70 @@
 	z-index: 1;
 }
 
-// Hide & Show
+// Show/hide content
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+.show {
+	display: block !important;
+}
+
 .hidden {
-	display: none;
+	display: none !important;
 }
 
-@media only screen and (max-width: 1200px),
-only screen and (max-width: 992px) {
-	.hidden-desktop {
-		display: none;
-	}
+.invisible {
+	visibility: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-	.hidden-tablet {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.hidden-mobile {
-		display: none;
-	}
-}
-
-// Colours
+// Contextual background colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.bgwhite {
-	background: @white;
-	background-color: @white;
+.bg-muted {
+	background-color: @grey-400;
 }
 
-.bggrey {
-	background: @grey-50;
-	background-color: @grey-50;
+.bg-primary {
+	background-color: @amber-300;
 }
 
-.danger {
-	background: @red-500;
-	background-color: @red-500;
+.bg-success {
+	background-color: @green-500;
 }
 
-.warning {
-	background: @amber-400;
-	background-color: @amber-400;
-}
-
-.info {
-	background: @blue-500;
+.bg-info {
 	background-color: @blue-500;
 }
 
-.success {
-	background: @green-500;
-	background-color: @green-500;
+.bg-warning {
+	background-color: @amber-A700;
+}
+
+.bg-danger {
+	background-color: @red-500;
+}
+
+// Contextual text colors
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.text-muted {
+	color: @grey-400;
+}
+
+.text-primary {
+	color: @amber-300;
+}
+
+.text-success {
+	color: @green-500;
+}
+
+.text-info {
+	color: @blue-500;
+}
+
+.text-warning {
+	color: @amber-A700;
+}
+
+.text-danger {
+	color: @red-500;
 }
 
 // Selection
@@ -266,22 +268,25 @@ only screen and (max-width: 992px) {
 
 // Clearfix
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.clearfix {
+.clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
 	&:after {
 		clear: both;
-		content: ' ';
-		display: table;
 	}
 }
 
-// Float
+// Quick floats
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.float-left {
-	float: left;
+.pull-left {
+	float: left !important;
 }
 
-.float-right {
-	float: right;
+.pull-right {
+	float: right !important;
 }
 
 // Text Selection
