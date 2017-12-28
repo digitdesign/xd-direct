@@ -6,15 +6,15 @@ $(".toggle").on("click", function () {
 	$(".toggle").parent().toggleClass("active");
 });
 
-// Image ALT Text
+// Image ALT text
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("img:not([alt])").attr("alt", "");
 
-// Inline Styles Remover
+// Inline styles remover
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("* [style]").removeAttr("style");
 
-// Deprecated Attributes Remover
+// Deprecated attributes remover
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("*").removeAttr("align background bgcolor border clear size");
 $("table").removeAttr("cellpadding cellspacing width height");
@@ -30,7 +30,7 @@ $("a").filter(function () {
 	rel: "nofollow noreferrer noopener"
 });
 
-// HTML HEX Entities
+// HTML HEX entities
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function escapeHtml(unsafe) {
 	return unsafe
@@ -46,26 +46,41 @@ function escapeHtml(unsafe) {
 		.replace(/₹/g, "&#x20B9;");
 }
 
-// ARIA Roles
+// ARIA roles
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("body:not([role])").attr("role", "document");
 $("header:not([role])").attr("role", "banner");
+$("#header:not([role])").attr("role", "banner");
 $("nav:not([role])").attr("role", "navigation");
 $("main:not([role])").attr("role", "main");
 $("#content:not([role])").attr("role", "main");
 $("section:not([role])").attr("role", "region");
 $("form:not([role])").attr("role", "form");
+$("option:not([role])").attr("role", "option");
 $("button:not([role])").attr("role", "button");
+$("input[type=submit]:not([role])").attr("role", "button");
+$("input[type=reset]:not([role])").attr("role", "button");
+$("input[type=image]:not([role])").attr("role", "button");
+$("input[type=checkbox]:not([role])").attr("role", "checkbox");
+$("input[type=radio]:not([role])").attr("role", "radio");
+$("input[type=range]:not([role])").attr("role", "slider");
 $("a:not([role])").attr("role", "link");
+$("hr:not([role])").attr("role", "separator");
+$("img:not([role])").attr("role", "img");
+$("ul:not([role])").attr("role", "list");
+$("ol:not([role])").attr("role", "list");
+$("datalist:not([role])").attr("role", "listbox");
+$("li:not([role])").attr("role", "listitem");
 $("output:not([role])").attr("role", "status");
 $("article:not([role])").attr("role", "article");
 $("aside:not([role])").attr("role", "complementary");
 $("footer:not([role])").attr("role", "contentinfo");
 
-// Email Extensions Autocomplete
+// Email extensions autocomplete
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("#email").on("keyup", function (event) {
 	var value = $(this).val();
-	var bindTo = $("#email");
+	var bindTo = $("input[type=email]");
 	var datalist = $("<datalist />", {
 		id: "email-options"
 	}).insertAfter(bindTo);
@@ -81,6 +96,3 @@ $("#email").on("keyup", function (event) {
 		datalist.html(newOptionsString);
 	} else {}
 });
-
-// Accordians
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
