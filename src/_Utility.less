@@ -234,7 +234,7 @@
 }
 
 .bg-warning {
-	background-color: @amber-A700;
+	background-color: @amber-600;
 }
 
 .bg-danger {
@@ -264,11 +264,49 @@
 }
 
 .text-warning {
-	color: @amber-A700;
+	color: @amber-600;
 }
 
 .text-danger {
 	color: @red-500;
+}
+
+.text-white {
+	color: @white;
+}
+
+.text-black {
+	color: @black;
+}
+
+.text-dark {
+	color: @grey-900;
+}
+
+// Contextual border colors
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.border-muted {
+	color: @grey-500;
+}
+
+.border-primary {
+	color: @amber-400;
+}
+
+.border-success {
+	color: @green-600;
+}
+
+.border-info {
+	color: @blue-600;
+}
+
+.border-warning {
+	color: @amber-700;
+}
+
+.border-danger {
+	color: @red-600;
 }
 
 // Selection
@@ -282,13 +320,10 @@
 
 // Clearfix
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.clearfix() {
-	&:before,
-	&:after {
-		content: " ";
-		display: table;
-	}
-	&:after {
+.clearfix {
+	&::after {
+		display: block;
+		content: "";
 		clear: both;
 	}
 }

@@ -1039,7 +1039,7 @@ section:first-child {
   background-color: #29F;
 }
 .bg-warning {
-  background-color: #F61;
+  background-color: #F80;
 }
 .bg-danger {
   background-color: #F43;
@@ -1060,16 +1060,48 @@ section:first-child {
   color: #29F;
 }
 .text-warning {
-  color: #F61;
+  color: #F80;
 }
 .text-danger {
   color: #F43;
+}
+.text-white {
+  color: #FFF;
+}
+.text-black {
+  color: #000;
+}
+.text-dark {
+  color: #222;
+}
+.border-muted {
+  color: #999;
+}
+.border-primary {
+  color: #FA0;
+}
+.border-success {
+  color: #7B4;
+}
+.border-info {
+  color: #18E;
+}
+.border-warning {
+  color: #F70;
+}
+.border-danger {
+  color: #E33;
 }
 .noselect {
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 .pull-left {
   float: left !important;
