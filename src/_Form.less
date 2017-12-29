@@ -99,15 +99,17 @@ label {
 }
 
 legend {
-	color: @grey-900;
-	font-size: 1.8rem;
-	font-weight: bold;
-	margin-bottom: 4px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
 	padding: 0;
+	white-space: normal
 }
 
 :-ms-input-placeholder,
 :-moz-placeholder,
 ::-webkit-input-placeholder {
-	color: @grey-300;
+	color: @grey-200;
 }
