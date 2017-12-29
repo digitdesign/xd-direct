@@ -58,10 +58,11 @@ function escapeHtml(unsafe) {
 
 // ARIA states
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$(":disabled:not([aria-disabled])").attr("aria-disabled", "true");
-$(":hidden:not([aria-hidden])").attr("aria-hidden", "true");
-$(":readonly:not([aria-readonly])").attr("aria-readonly", "true");
-$(":checked:not([aria-checked])").attr("aria-checked", "true");
+$("input[type][checked]:not([aria-checked])").attr("aria-checked", "true");
+$("input[type][readonly]:not([aria-readonly])").attr("aria-readonly", "true");
+$("input[type][disabled]:not([aria-disabled])").attr("aria-disabled", "true");
+$("input[type][hidden]:not([aria-hidden])").attr("aria-hidden", "true");
+
 
 // ARIA roles
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
