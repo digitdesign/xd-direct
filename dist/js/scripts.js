@@ -62,7 +62,7 @@ $("input[type][checked]:not([aria-checked])").attr("aria-checked", "true");
 $("input[type][readonly]:not([aria-readonly])").attr("aria-readonly", "true");
 $("input[type][disabled]:not([aria-disabled])").attr("aria-disabled", "true");
 $("input[type][hidden]:not([aria-hidden])").attr("aria-hidden", "true");
-
+$("details[open]:not([aria-expanded])").attr("aria-expanded", "true");
 
 // ARIA roles
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -88,6 +88,7 @@ $("input[type=image]:not([role])").attr("role", "button");
 $("input[type=checkbox]:not([role])").attr("role", "checkbox");
 $("input[type=radio]:not([role])").attr("role", "radio");
 $("input[type=range]:not([role])").attr("role", "slider");
+$("input[type][list]:not([role])").attr("role", "combobox");
 $("select:not([role])").attr("role", "combobox");
 $("progress:not([role])").attr("role", "progressbar");
 $("table:not([role])").attr("role", "grid");
