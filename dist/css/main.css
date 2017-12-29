@@ -799,7 +799,7 @@ section:first-child {
 }
 .input-addon {
   height: auto;
-  padding: 9px 18px;
+  padding: 10px 18px;
   background: #F5F5F5;
   border: 1px solid #CCC;
   display: -webkit-box;
