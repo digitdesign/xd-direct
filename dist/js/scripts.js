@@ -14,6 +14,13 @@ $("img:not([alt])").attr("alt", "");
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("* [style]").removeAttr("style");
 
+// Input spellcheck/autocorrect rules
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("input[type=email]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=email]:not([autocorrect])").attr("autocorrect", "off");
+$("input[type=url]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=url]:not([autocorrect])").attr("autocorrect", "off");
+
 // Deprecated attributes remover
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("*").removeAttr("align background bgcolor border clear size");
@@ -78,7 +85,7 @@ $("footer:not([role])").attr("role", "contentinfo");
 
 // Email extensions autocomplete
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("#email").on("keyup", function (event) {
+$("input[type=email]").on("keyup", function (event) {
 	var value = $(this).val();
 	var bindTo = $("input[type=email]");
 	var datalist = $("<datalist />", {
