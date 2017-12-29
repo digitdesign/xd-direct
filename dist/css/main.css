@@ -1,4 +1,4 @@
-/*! Digit XD v1.1.7 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.1.8 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *:after,
 *:before {
@@ -714,7 +714,7 @@ a.link {
   display: flex;
   font-size: 1.3rem;
   font-weight: 600;
-  padding: 22px 12px;
+  padding: 28px 12px;
   text-decoration: none;
   white-space: nowrap;
 }

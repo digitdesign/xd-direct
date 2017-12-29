@@ -61,6 +61,7 @@ function escapeHtml(unsafe) {
 $("input[type][checked]:not([aria-checked])").attr("aria-checked", "true");
 $("input[type][readonly]:not([aria-readonly])").attr("aria-readonly", "true");
 $("input[type][disabled]:not([aria-disabled])").attr("aria-disabled", "true");
+$("input[type][required]:not([aria-checked])").attr("aria-checked", "true");
 $("input[type][hidden]:not([aria-hidden])").attr("aria-hidden", "true");
 $("details[open]:not([aria-expanded])").attr("aria-expanded", "true");
 $("*[contextmenu]:not([aria-haspopup])").attr("aria-haspopup", "true");
