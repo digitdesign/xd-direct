@@ -30,6 +30,7 @@ $("input[type=url]:not([autocorrect])").attr("autocorrect", "off");
 $("input[type=password]:not([spellcheck])").attr("spellcheck", "false");
 $("input[type=password]:not([autocorrect])").attr("autocorrect", "off");
 $("input[type=search]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=search]:not([autocorrect])").attr("autocorrect", "off");
 
 // External Link Treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
