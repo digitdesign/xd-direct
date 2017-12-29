@@ -14,19 +14,22 @@ $("img:not([alt])").attr("alt", "");
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("* [style]").removeAttr("style");
 
-// Input spellcheck/autocorrect rules
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[type=email]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=email]:not([autocorrect])").attr("autocorrect", "off");
-$("input[type=url]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=url]:not([autocorrect])").attr("autocorrect", "off");
-
 // Deprecated attributes remover
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("*").removeAttr("align background bgcolor border clear size");
 $("table").removeAttr("cellpadding cellspacing width height");
 $("link[type]").removeAttr("type");
 $("script[type]").removeAttr("type");
+
+// Input spellcheck/autocorrect rules
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("input[type=email]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=email]:not([autocorrect])").attr("autocorrect", "off");
+$("input[type=url]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=url]:not([autocorrect])").attr("autocorrect", "off");
+$("input[type=password]:not([spellcheck])").attr("spellcheck", "false");
+$("input[type=password]:not([autocorrect])").attr("autocorrect", "off");
+$("input[type=search]:not([spellcheck])").attr("spellcheck", "false");
 
 // External Link Treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -53,6 +56,13 @@ function escapeHtml(unsafe) {
 		.replace(/₹/g, "&#x20B9;");
 }
 
+// ARIA states
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$(":disabled:not([aria-disabled])").attr("aria-disabled", "true");
+$(":hidden:not([aria-hidden])").attr("aria-hidden", "true");
+$(":read-only:not([aria-readonly])").attr("aria-readonly", "true");
+$(":checked:not([aria-checked])").attr("aria-checked", "true");
+
 // ARIA roles
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("body:not([role])").attr("role", "document");
@@ -65,12 +75,27 @@ $("section:not([role])").attr("role", "region");
 $("form:not([role])").attr("role", "form");
 $("option:not([role])").attr("role", "option");
 $("button:not([role])").attr("role", "button");
+$("fieldset:not([role])").attr("role", "group");
+$("optgroup:not([role])").attr("role", "group");
+$("input[type=text]:not([role])").attr("role", "textbox");
+$("input[type=password]:not([role])").attr("role", "textbox");
+$("input[type=url]:not([role])").attr("role", "textbox");
+$("input[type=email]:not([role])").attr("role", "textbox");
 $("input[type=submit]:not([role])").attr("role", "button");
 $("input[type=reset]:not([role])").attr("role", "button");
 $("input[type=image]:not([role])").attr("role", "button");
 $("input[type=checkbox]:not([role])").attr("role", "checkbox");
 $("input[type=radio]:not([role])").attr("role", "radio");
 $("input[type=range]:not([role])").attr("role", "slider");
+$("input[type]:([list])").attr("role", "combobox");
+$("select:not([role])").attr("role", "combobox");
+$("progress:not([role])").attr("role", "progressbar");
+$("table:not([role])").attr("role", "grid");
+$("thead:not([role])").attr("role", "rowgroup");
+$("tbody:not([role])").attr("role", "rowgroup");
+$("tfoot:not([role])").attr("role", "rowgroup");
+$("tr:not([role])").attr("role", "row");
+$("td:not([role])").attr("role", "gridcell");
 $("a:not([role])").attr("role", "link");
 $("hr:not([role])").attr("role", "separator");
 $("img:not([role])").attr("role", "img");
