@@ -436,7 +436,6 @@ input[type="reset"].secondary,
 input[type="submit"].secondary {
   border-color: #DDD;
   background-color: transparent;
-  border: none;
   color: #222;
 }
 .button.secondary:focus,
