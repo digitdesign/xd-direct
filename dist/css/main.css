@@ -1047,6 +1047,12 @@ section:first-child {
 .bg-inverse {
   background-color: #222;
 }
+.bg-grey {
+  background-color: #F5F5F5;
+}
+.bg-white {
+  background-color: #FFF;
+}
 .text-muted {
   color: #AAA;
 }
