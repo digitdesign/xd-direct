@@ -1,4 +1,4 @@
-/*! Digit XD v1.2.0 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.2.1 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *::after,
 *::before {
@@ -348,32 +348,28 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #FB0;
-  border: none;
+  border: 1px solid #FB0;
   border-radius: 2px;
   color: #222;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: bold;
+  margin: 10px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  margin: 10px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
   -webkit-transition: all 40ms ease-in-out;
   transition: all 40ms ease-in-out;
@@ -390,6 +386,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+  border-color: #FD6;
   background-color: #FD6;
   color: #444;
   cursor: pointer;
@@ -420,7 +417,7 @@ button.loading,
 input[type="button"].loading,
 input[type="reset"].loading,
 input[type="submit"].loading {
-  background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23444%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
+  background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23444%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 40px;
   color: transparent !important;
   pointer-events: none;
 }
@@ -437,8 +434,7 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-color: #DDD;
   background-color: transparent;
   border: none;
   color: #222;
@@ -479,7 +475,7 @@ button.secondary.loading,
 input[type="button"].secondary.loading,
 input[type="reset"].secondary.loading,
 input[type="submit"].secondary.loading {
-  background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 4rem;
+  background: #FFF url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 40px;
   color: transparent !important;
   pointer-events: none;
 }
@@ -528,8 +524,8 @@ input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([t
 textarea:focus,
 select:focus {
   border-color: #FA0;
-  -webkit-box-shadow: 0 0 0 2px #FFF2BD;
-  box-shadow: 0 0 0 2px #FFF2BD;
+  -webkit-box-shadow: 0 0 0 2px #FFC;
+  box-shadow: 0 0 0 2px #FFC;
   outline: 0;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
@@ -638,10 +634,10 @@ tr {
   border-bottom: 1px solid #EEE;
 }
 caption {
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 18px;
   text-align: left;
-  font-size: 1.8rem;
 }
 th {
   font-weight: 600;
@@ -662,14 +658,12 @@ th:last-child {
 }
 .navbar {
   background: #FFF;
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  padding: 0 30px;
+  border-bottom: 1px solid #DDD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 30px;
   overflow: hidden;
-  z-index: 1000;
 }
 .navbar .toggle {
   display: none;
@@ -1042,22 +1036,22 @@ section:first-child {
   visibility: hidden;
 }
 .text-hidden {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
   background-color: transparent;
   border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
 }
 .page-grey {
   background-color: #F5F5F5;
+  margin: 0;
   min-height: 100%;
   min-width: 100%;
-  position: absolute;
-  margin: 0;
   padding: 0;
-  z-index: -1;
+  position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .bg-muted {
   background-color: #AAA;
