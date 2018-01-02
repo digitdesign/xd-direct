@@ -257,9 +257,12 @@ video {
   display: inline-block;
 }
 img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
   height: auto;
   max-width: 100%;
   outline: none;
+  vertical-align: middle;
 }
 audio:not([controls]) {
   display: none;
