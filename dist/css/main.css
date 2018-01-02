@@ -1,7 +1,7 @@
 /*! Digit XD v1.1.8 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
