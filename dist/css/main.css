@@ -877,25 +877,25 @@ section:first-child {
   padding: 0;
 }
 .width-25 {
-  width: 100%;
+  width: 25%;
 }
 .width-50 {
-  width: 100%;
+  width: 50%;
 }
 .width-75 {
-  width: 100%;
+  width: 75%;
 }
 .width-100 {
   width: 100%;
 }
 .height-25 {
-  height: 100%;
+  height: 25%;
 }
 .height-50 {
-  height: 100%;
+  height: 50%;
 }
 .height-75 {
-  height: 100%;
+  height: 75%;
 }
 .height-100 {
   height: 100%;
