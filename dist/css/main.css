@@ -672,6 +672,7 @@ th:last-child {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  z-index: 1000;
 }
 .navbar .toggle {
   display: none;
