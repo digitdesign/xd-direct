@@ -997,6 +997,12 @@ section:first-child {
   text-align: center;
   margin: auto;
 }
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
 .position-fixed-top {
   position: fixed;
   top: 0;
@@ -1010,9 +1016,6 @@ section:first-child {
   right: 0;
   left: 0;
   z-index: 1;
-}
-.position-absolute {
-  position: absolute;
 }
 .show {
   display: block !important;
