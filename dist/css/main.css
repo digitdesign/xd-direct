@@ -1,4 +1,4 @@
-/*! Digit XD v1.2.3 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.2.4 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *::after,
 *::before {
@@ -261,7 +261,7 @@ img {
   display: inline-block;
   height: auto;
   max-width: 100%;
-  outline: none;
+  outline: 0;
   vertical-align: middle;
 }
 audio:not([controls]) {
@@ -327,7 +327,6 @@ ul {
 a {
   color: #FA0;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 40ms ease-in-out;
   transition: all 40ms ease-in-out;
@@ -338,7 +337,6 @@ a:hover {
   color: #FB0;
   outline-color: #FB0;
   outline-width: 2px;
-  -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
@@ -400,8 +398,8 @@ input[type="reset"]:active,
 input[type="submit"]:active {
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
-  -webkit-transition: none;
-  transition: none;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 .button[disabled],
 button[disabled],
@@ -802,7 +800,7 @@ section:first-child {
   align-items: center;
   vertical-align: middle;
   margin: 0;
-  border-right: none;
+  border-right: 0;
   border-radius: 3px 0 0 3px;
   font-size: 1.4rem;
   -ms-user-select: none;
@@ -1163,7 +1161,7 @@ section:first-child {
   }
   a.link.active {
     border-left: 2px solid #FB0;
-    border-bottom: none;
+    border-bottom: 0;
   }
   .navbar {
     display: block;
