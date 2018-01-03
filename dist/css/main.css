@@ -1,4 +1,4 @@
-/*! Digit XD v1.2.1 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.2.2 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *::after,
 *::before {
@@ -273,7 +273,7 @@ svg:not(:root) {
 }
 code {
   background: #EEE;
-  border-radius: 2px;
+  border-radius: 3px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: inherit;
   margin: 0 2px;
@@ -282,7 +282,7 @@ code {
 }
 pre {
   background: #EEE;
-  border-radius: 2px;
+  border-radius: 3px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow-y: hidden;
   padding: 14px;
@@ -352,8 +352,8 @@ input[type="submit"] {
   -ms-flex-align: center;
   align-items: center;
   background-color: #FB0;
-  border: 1px solid #FB0;
-  border-radius: 2px;
+  border: 1px solid #FA0;
+  border-radius: 3px;
   color: #222;
   cursor: pointer;
   display: -webkit-box;
@@ -386,8 +386,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #FD6;
-  background-color: #FD6;
+  border-color: #FB0;
+  background-color: #FC3;
   color: #444;
   cursor: pointer;
   outline: 0;
@@ -398,8 +398,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  -webkit-filter: brightness(95%);
-  filter: brightness(95%);
+  background-color: #FA0;
+  border-color: #F90;
   -webkit-transition: none;
   transition: none;
 }
@@ -495,7 +495,7 @@ select {
   appearance: none;
   background-color: transparent;
   border: 1px solid #CCC;
-  border-radius: 2px;
+  border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-sizing: inherit;
@@ -760,7 +760,7 @@ section:first-child {
   -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   background: #FFF;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 0;
   padding: 16px;
   width: 100%;
@@ -803,7 +803,7 @@ section:first-child {
   vertical-align: middle;
   margin: 0;
   border-right: none;
-  border-radius: 2px 0 0 2px;
+  border-radius: 3px 0 0 3px;
   font-size: 1.4rem;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -812,7 +812,7 @@ section:first-child {
 }
 .input-group > input {
   margin: 0;
-  border-radius: 0 2px 2px 0 !important;
+  border-radius: 0 3px 3px 0 !important;
 }
 [data-tooltip] {
   position: relative;
@@ -829,7 +829,7 @@ section:first-child {
   color: #FFF;
   font-size: 1.2rem;
   padding: 6px 12px;
-  border-radius: 2px;
+  border-radius: 3px;
   white-space: nowrap;
   text-decoration: none;
 }
