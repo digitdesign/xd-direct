@@ -398,8 +398,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  background-color: #FA0;
-  border-color: #F90;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
   -webkit-transition: none;
   transition: none;
 }
