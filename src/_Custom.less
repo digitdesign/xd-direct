@@ -86,7 +86,7 @@ img.brand {
 //Footer
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .footer {
-	background: @grey-light;
+	background: linear-gradient(to right, @white, rgba(255, 255, 255, 0), @white) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, .14), rgba(0, 0, 0, .03) 3px, transparent) no-repeat border-box;
 	font-size: 1.15rem;
 	padding: 24px;
 	position: absolute;
@@ -95,7 +95,7 @@ img.brand {
 	right: 0;
 	width: 100%;
 	z-index: 1;
-	&>a {
+	& > a {
 		color: @grey-700;
 	}
 }
