@@ -486,8 +486,8 @@ select {
   background-color: transparent;
   border: 1px solid #CCC;
   border-radius: 3px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   padding: 12px;
