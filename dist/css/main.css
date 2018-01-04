@@ -376,11 +376,9 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #FC3;
-  border-color: #FC3;
-  color: #444;
   cursor: pointer;
-  outline: 0;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
   text-decoration: none;
 }
 .button:active,
@@ -388,6 +386,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
   -webkit-transition: 0s;
@@ -399,8 +399,10 @@ input[type="button"][disabled],
 input[type="reset"][disabled],
 input[type="submit"][disabled] {
   background: #DDD;
+  border-color: inherit;
   color: #666;
   cursor: not-allowed;
+  pointer-events: none;
 }
 .button.loading,
 button.loading,
@@ -424,9 +426,9 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  border-color: #CCC;
-  background-color: transparent;
-  color: #222;
+  border-color: #222;
+  background-color: #FFF;
+  color: #444;
 }
 .button.secondary:focus,
 button.secondary:focus,
@@ -438,12 +440,22 @@ button.secondary:hover,
 input[type="button"].secondary:hover,
 input[type="reset"].secondary:hover,
 input[type="submit"].secondary:hover {
-  background-color: #FD6;
-  border-color: #FD6;
-  color: #444;
   cursor: pointer;
-  outline: 0;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
   text-decoration: none;
+}
+.button.secondary:active,
+button.secondary:active,
+input[type="button"].secondary:active,
+input[type="reset"].secondary:active,
+input[type="submit"].secondary:active {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 .button.secondary[disabled]:focus,
 button.secondary[disabled]:focus,
@@ -458,6 +470,7 @@ input[type="submit"].secondary[disabled]:hover {
   border-color: inherit;
   color: #BBB;
   cursor: not-allowed;
+  pointer-events: none;
 }
 .button.secondary.loading,
 button.secondary.loading,
