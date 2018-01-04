@@ -360,7 +360,7 @@ input[type="submit"] {
   font-size: 1.3rem;
   font-weight: 600;
   margin: auto 6px;
-  outline: none;
+  outline-color: #FB0;
   padding: 13px 20px;
   text-align: center;
   text-decoration: none;
@@ -379,9 +379,6 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #F60;
-  -webkit-box-shadow: 0 0 0 2px #FB0;
-  box-shadow: 0 0 0 2px #FB0;
   color: inherit;
   cursor: pointer;
   -webkit-filter: brightness(95%);
