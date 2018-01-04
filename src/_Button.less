@@ -10,6 +10,7 @@ input[type="submit"] {
 	background: @amber-300;
 	background: -webkit-gradient(linear, left top, left bottom, from(@amber-200), to(@amber-300));
 	background: linear-gradient(to bottom, @amber-200, @amber-300);
+	background-origin: border-box;
 	border: 1px solid rgba(0, 0, 0, .06);
 	border-radius: @border-radius;
 	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
@@ -80,8 +81,8 @@ input[type="submit"] {
 			text-decoration: none;
 		}
 		&:focus {
-			-webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, .3);
-			box-shadow: 0 0 0 3px rgba(0, 0, 0, .3);
+			-webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, .03);
+			box-shadow: 0 0 0 3px rgba(0, 0, 0, .03);
 		}
 		&:active {
 			-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2) inset;

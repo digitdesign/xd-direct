@@ -357,6 +357,7 @@ input[type="submit"] {
   background: #FB0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FC3), to(#FB0));
   background: linear-gradient(to bottom, #FC3, #FB0);
+  background-origin: border-box;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
@@ -473,8 +474,8 @@ button.secondary:focus,
 input[type="button"].secondary:focus,
 input[type="reset"].secondary:focus,
 input[type="submit"].secondary:focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
 }
 .button.secondary:active,
 button.secondary:active,
