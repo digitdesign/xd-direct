@@ -344,7 +344,8 @@ a:focus {
   outline: thin dotted;
 }
 a:visited {
-  color: #04A;
+  -webkit-filter: brightness(92%);
+  filter: brightness(92%);
 }
 .button,
 button,
