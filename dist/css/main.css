@@ -1,4 +1,4 @@
-/*! Digit XD v1.3 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.3.1 | (c) Go Digit General Insurance Ltd. and Contributors */
 *,
 *::after,
 *::before {
@@ -1100,6 +1100,15 @@ section:first-child {
 }
 .text-link {
   color: #26F;
+}
+.broken-link {
+  color: #999;
+  pointer-events: none;
+  text-decoration: line-through;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .border-muted {
   color: #999;
