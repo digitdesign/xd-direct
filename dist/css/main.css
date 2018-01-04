@@ -333,13 +333,15 @@ a {
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
-a:focus,
-a:hover {
+a:hover,
+a:focus {
   color: #F61;
-  outline: thin dotted;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
+}
+a:focus {
+  outline: thin dotted;
 }
 a:visited {
   color: #04A;
@@ -376,7 +378,12 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
   color: inherit;
   cursor: pointer;
   -webkit-filter: brightness(95%);
@@ -390,10 +397,6 @@ input[type="reset"]:focus,
 input[type="submit"]:focus {
   -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
   box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
-  color: inherit;
-  -webkit-filter: brightness(95%);
-  filter: brightness(95%);
-  text-decoration: none;
 }
 .button:active,
 button:active,

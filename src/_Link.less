@@ -7,13 +7,15 @@ a {
 	-webkit-transition: @transition;
 	transition: @transition;
 	-webkit-tap-highlight-color: transparent;
-	&:focus,
-	&:hover {
+	&:hover,
+	&:focus {
 		color: @amber-A700;
-		outline: thin dotted;
 		text-decoration: underline;
 		-webkit-text-decoration-skip: ink;
 		text-decoration-skip: ink;
+	}
+	&:focus {
+		outline: thin dotted;
 	}
 	&:visited {
 		color: @blue-900;
