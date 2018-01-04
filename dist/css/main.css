@@ -355,8 +355,8 @@ input[type="submit"] {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background: #FB0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FB0), to(#FA0));
-  background: linear-gradient(to bottom, #FB0, #FA0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FC3), to(#FB0));
+  background: linear-gradient(to bottom, #FC3, #FB0);
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
