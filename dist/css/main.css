@@ -273,7 +273,7 @@ svg:not(:root) {
 }
 code {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: inherit;
   margin: 0 2px;
@@ -282,7 +282,7 @@ code {
 }
 pre {
   background: #EEE;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow-y: hidden;
   padding: 14px;
@@ -348,7 +348,7 @@ input[type="reset"],
 input[type="submit"] {
   background-color: #FB0;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 3px;
+  border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
   color: #222;
@@ -485,7 +485,7 @@ select {
   appearance: none;
   background-color: transparent;
   border: 1px solid #CCC;
-  border-radius: 3px;
+  border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
   -webkit-box-sizing: inherit;
@@ -560,17 +560,13 @@ textarea {
   overflow: auto;
   resize: none;
 }
+.label,
 label {
   color: #222;
   display: inline-block;
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 4px;
-}
-.label-inline {
-  display: inline-block;
-  font-weight: normal;
-  margin-left: 4px;
 }
 legend {
   -webkit-box-sizing: border-box;
@@ -751,7 +747,7 @@ section:first-child {
 .card {
   background: #FFF;
   border: 1px solid #DDD;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 0;
   padding: 16px;
   width: 100%;
@@ -794,7 +790,7 @@ section:first-child {
   vertical-align: middle;
   margin: 0;
   border-right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 2px 0 0 2px;
   font-size: 1.4rem;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -803,7 +799,7 @@ section:first-child {
 }
 .input-group > input {
   margin: 0;
-  border-radius: 0 3px 3px 0 !important;
+  border-radius: 0 2px 2px 0 !important;
 }
 [data-tooltip] {
   position: relative;
@@ -820,7 +816,7 @@ section:first-child {
   color: #FFF;
   font-size: 1.2rem;
   padding: 6px 12px;
-  border-radius: 3px;
+  border-radius: 2px;
   white-space: nowrap;
   text-decoration: none;
 }
