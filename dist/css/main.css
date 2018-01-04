@@ -260,7 +260,6 @@ video {
 img {
   -ms-interpolation-mode: bicubic;
   display: inline-block;
-  height: auto;
   max-width: 100%;
   outline: 0;
   vertical-align: middle;
@@ -368,7 +367,6 @@ input[type="submit"] {
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: 600;
-  margin: auto 6px;
   padding: 11px 20px;
   text-align: center;
   text-decoration: none;
@@ -557,7 +555,7 @@ select::-webkit-inner-spin-button {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):focus,
 textarea:focus,
 select:focus {
-  border-color: #FA0;
+  border-color: #F90;
   -webkit-box-shadow: 0 0 0 2px #FEA;
   box-shadow: 0 0 0 2px #FEA;
   outline: 0;
@@ -611,7 +609,7 @@ label {
   display: block;
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin: 0 0 4px 2px;
 }
 .label-inline {
   display: inline-block;
