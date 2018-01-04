@@ -369,11 +369,6 @@ input[type="submit"] {
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
-.button:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
 .button:hover,
 button:hover,
 input[type="button"]:hover,
@@ -385,8 +380,15 @@ input[type="submit"]:hover {
   cursor: pointer;
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
-  outline: none;
   text-decoration: none;
+}
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+  box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
 }
 .button:active,
 button:active,
