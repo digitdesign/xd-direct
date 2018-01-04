@@ -169,6 +169,12 @@
 // Alignment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .align {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -176,14 +182,8 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	position: relative;
 	height: 100%;
+	position: relative;
 }
 
 .align-left {
@@ -195,8 +195,9 @@
 }
 
 .align-center {
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	margin: auto;
 }
 
 // Positions

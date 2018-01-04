@@ -749,7 +749,7 @@ section:first-child {
   border: 1px solid #DDD;
   border-radius: 2px;
   margin: 0;
-  padding: 16px;
+  padding: 18px;
   width: 100%;
 }
 .card:empty::before {
@@ -963,6 +963,12 @@ section:first-child {
   color: rgba(255, 255, 255, 0.25);
 }
 .align {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,14 +976,8 @@ section:first-child {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
   height: 100%;
+  position: relative;
 }
 .align-left {
   text-align: left;
@@ -986,8 +986,9 @@ section:first-child {
   text-align: right;
 }
 .align-center {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  margin: auto;
 }
 .position-absolute {
   position: absolute;
