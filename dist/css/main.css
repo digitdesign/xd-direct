@@ -356,7 +356,7 @@ input[type="submit"] {
   display: inline-block;
   font-family: inherit;
   font-size: 1.3rem;
-  font-weight: normal;
+  font-weight: 600;
   margin: auto 6px;
   padding: 13px 20px;
   text-align: center;
@@ -726,9 +726,8 @@ img.brand {
   min-height: 32px;
 }
 .footer {
-  background: #FFF;
-  border-top: 1px solid #EEE;
-  font-size: 1.3rem;
+  background: #F5F5F5;
+  font-size: 1.14rem;
   padding: 18px;
   position: absolute;
   bottom: 0;
@@ -736,6 +735,9 @@ img.brand {
   right: 0;
   width: 100%;
   z-index: 1;
+}
+.footer > a {
+  color: #666;
 }
 section:first-child {
   margin-top: 3%;
