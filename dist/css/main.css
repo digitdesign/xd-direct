@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.1 | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD v1.3.2 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *::after,
 *::before {
@@ -768,8 +768,6 @@ img.brand {
   right: 0;
   margin-top: 24px;
   text-align: center;
-  width: 100%;
-  z-index: 1;
 }
 section:first-child {
   margin-top: 3%;

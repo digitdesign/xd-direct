@@ -1,4 +1,4 @@
-/*! Digit XD Scripts | (c) Go Digit General Insurance Ltd. and Contributors */
+/*! Digit XD JavaScript | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 
 // Navbar
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
