@@ -1087,6 +1087,9 @@ section:first-child {
 .text-dark {
   color: #222;
 }
+.text-link {
+  color: #26F;
+}
 .border-muted {
   color: #999;
 }
