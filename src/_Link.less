@@ -3,13 +3,20 @@
 a {
 	color: @blue-A700;
 	cursor: pointer;
+	outline: none;
 	text-decoration: none;
 	-webkit-transition: @transition;
 	transition: @transition;
 	-webkit-tap-highlight-color: transparent;
-	&:focus,
 	&:hover {
 		color: @amber-A700;
+		text-decoration: underline;
+		-webkit-text-decoration-skip: ink;
+		text-decoration-skip: ink;
+	}
+	&:focus {
+		-webkit-box-shadow: 0 0 0 3px @blue-200;
+		box-shadow: 0 0 0 3px @blue-200;
 		text-decoration: underline;
 		-webkit-text-decoration-skip: ink;
 		text-decoration-skip: ink;
