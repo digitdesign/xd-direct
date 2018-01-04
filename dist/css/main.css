@@ -728,12 +728,15 @@ img.brand {
   background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.04) 1px, transparent) no-repeat border-box;
   background-color: #FFF;
   font-size: 1.15rem;
-  padding: 2%;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  height: max-content;
+  padding: 1.4%;
   position: relative;
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 32px;
+  margin-top: 24px;
   text-align: center;
   width: 100%;
   z-index: 1;
