@@ -7,7 +7,9 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	background-color: @amber-300;
+	background: @amber-300;
+	background: -webkit-gradient(linear, left top, left bottom, from(@amber-300), to(@amber-400));
+	background: linear-gradient(to bottom, @amber-300, @amber-400);
 	border: 1px solid rgba(0, 0, 0, .06);
 	border-radius: @border-radius;
 	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
@@ -20,7 +22,7 @@ input[type="submit"] {
 	font-weight: 600;
 	margin: auto 6px;
 	outline: none;
-	padding: 13px 20px;
+	padding: 11px 20px;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
