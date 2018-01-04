@@ -727,7 +727,7 @@ img.brand {
 .footer {
   background: linear-gradient(to right, #FFF, rgba(255, 255, 255, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04) 2px, transparent) no-repeat border-box;
   font-size: 1.15rem;
-  padding: 24px;
+  padding: 2%;
   position: absolute;
   bottom: 0;
   left: 0;
