@@ -688,6 +688,9 @@ th:last-child {
   padding-right: 0;
 }
 .navbar {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #FFF;
   border-bottom: 1px solid #DDD;
   display: -webkit-box;
