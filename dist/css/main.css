@@ -346,6 +346,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background-color: #FB0;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px;
@@ -358,6 +360,7 @@ input[type="submit"] {
   font-size: 1.3rem;
   font-weight: 600;
   margin: auto 6px;
+  outline: none;
   padding: 13px 20px;
   text-align: center;
   text-decoration: none;
@@ -376,6 +379,9 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+  border-color: #F60;
+  -webkit-box-shadow: 0 0 0 2px #FB0;
+  box-shadow: 0 0 0 2px #FB0;
   color: inherit;
   cursor: pointer;
   -webkit-filter: brightness(95%);
@@ -739,7 +745,7 @@ img.brand {
   min-height: 32px;
 }
 .footer {
-  background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.04) 1px, transparent) no-repeat border-box;
+  background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.04) 2px, transparent) no-repeat border-box;
   background-color: #FFF;
   font-size: 1.15rem;
   height: -moz-max-content;
