@@ -325,7 +325,7 @@ ul {
   list-style: disc inside;
 }
 a {
-  color: #FA0;
+  color: #26F;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: all 40ms ease-in-out;
@@ -334,12 +334,12 @@ a {
 }
 a:focus,
 a:hover {
-  color: #FB0;
-  outline-color: #FB0;
-  outline-width: 2px;
+  color: #F61;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
+  outline-color: #F61;
+  outline-width: 2px;
 }
 .button,
 button,
@@ -727,8 +727,8 @@ img.brand {
 }
 .footer {
   background: #F5F5F5;
-  font-size: 1.14rem;
-  padding: 18px;
+  font-size: 1.15rem;
+  padding: 24px;
   position: absolute;
   bottom: 0;
   left: 0;
