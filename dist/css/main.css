@@ -328,21 +328,14 @@ ul {
 a {
   color: #26F;
   cursor: pointer;
-  outline: none;
   text-decoration: none;
   -webkit-transition: all 65ms ease-in-out;
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
+a:focus,
 a:hover {
   color: #F61;
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-  text-decoration-skip: ink;
-}
-a:focus {
-  -webkit-box-shadow: 0 0 0 3px #9CF;
-  box-shadow: 0 0 0 3px #9CF;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
