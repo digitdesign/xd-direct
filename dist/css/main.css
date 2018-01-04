@@ -374,8 +374,6 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
-  box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
   color: inherit;
   cursor: pointer;
   -webkit-filter: brightness(95%);
@@ -389,6 +387,10 @@ input[type="reset"]:focus,
 input[type="submit"]:focus {
   -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
   box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+  color: inherit;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
+  text-decoration: none;
 }
 .button:active,
 button:active,
