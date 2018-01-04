@@ -1246,7 +1246,7 @@ section:first-child {
     text-decoration-skip: ink;
   }
   a[href]:after {
-    content: '\00A0(" attr(href) ")';
+    content: "\00A0('attr(href)')";
     word-break: break-all;
   }
   a[href="#"],
