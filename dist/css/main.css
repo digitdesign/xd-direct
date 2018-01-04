@@ -350,7 +350,7 @@ input[type="submit"] {
   -ms-flex-align: center;
   align-items: center;
   background-color: #FB0;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 3px;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
@@ -434,7 +434,7 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  border-color: #DDD;
+  border-color: #CCC;
   background-color: transparent;
   color: #222;
 }
