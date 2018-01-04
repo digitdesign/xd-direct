@@ -338,8 +338,6 @@ a:hover {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
-  outline-color: #F61;
-  outline-width: 2px;
 }
 .button,
 button,
