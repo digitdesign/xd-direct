@@ -361,14 +361,13 @@ input[type="submit"] {
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  color: #222;
+  color: #000;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: 600;
   margin: auto 6px;
-  outline: none;
   padding: 11px 20px;
   text-align: center;
   text-decoration: none;
@@ -387,10 +386,11 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-  color: inherit;
+  color: initial;
   cursor: pointer;
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
+  outline: none;
   text-decoration: none;
 }
 .button:focus,
@@ -446,9 +446,12 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  border-color: #222;
-  background-color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+  background: linear-gradient(to bottom, #FFF, #EEE);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   color: #000;
+  -webkit-filter: brightness(99%);
+  filter: brightness(99%);
 }
 .button.secondary:focus,
 button.secondary:focus,
@@ -464,6 +467,14 @@ input[type="submit"].secondary:hover {
   -webkit-filter: brightness(96%);
   filter: brightness(96%);
   text-decoration: none;
+}
+.button.secondary:focus,
+button.secondary:focus,
+input[type="button"].secondary:focus,
+input[type="reset"].secondary:focus,
+input[type="submit"].secondary:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
 }
 .button.secondary:active,
 button.secondary:active,

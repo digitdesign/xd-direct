@@ -14,14 +14,13 @@ input[type="submit"] {
 	border-radius: @border-radius;
 	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
 	box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
-	color: @grey-900;
+	color: @black;
 	cursor: pointer;
 	display: inline-block;
 	font-family: inherit;
 	font-size: 1.3rem;
 	font-weight: 600;
 	margin: auto 6px;
-	outline: none;
 	padding: 11px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -31,10 +30,11 @@ input[type="submit"] {
 	-webkit-tap-highlight-color: transparent;
 	&:hover,
 	&:focus {
-		color: inherit;
+		color: initial;
 		cursor: pointer;
 		-webkit-filter: brightness(95%);
 		filter: brightness(95%);
+		outline: none;
 		text-decoration: none;
 	}
 	&:focus {
@@ -66,15 +66,22 @@ input[type="submit"] {
 		}
 	}
 	&.secondary {
-		border-color: @grey-900;
-		background-color: @white;
-		color: @black;
+		background: -webkit-gradient(linear, left top, left bottom, from(@white), to(@grey-50));
+		background: linear-gradient(to bottom, @white, @grey-50);
+		border: 1px solid rgba(0, 0, 0, 0.08);
+		color: #000;
+		-webkit-filter: brightness(99%);
+		filter: brightness(99%);
 		&:focus,
 		&:hover {
 			cursor: pointer;
 			-webkit-filter: brightness(96%);
 			filter: brightness(96%);
 			text-decoration: none;
+		}
+		&:focus {
+			-webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, .3);
+			box-shadow: 0 0 0 3px rgba(0, 0, 0, .3);
 		}
 		&:active {
 			-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2) inset;
