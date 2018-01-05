@@ -637,6 +637,28 @@ dt,
 li {
   margin-bottom: 10px;
 }
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.button:first-child,
+button:first-child,
+input[type="button"]:first-child,
+input[type="reset"]:first-child,
+input[type="submit"]:first-child {
+  margin-left: 0;
+}
+.button:last-child,
+button:last-child,
+input[type="button"]:last-child,
+input[type="reset"]:last-child,
+input[type="submit"]:last-child {
+  margin-right: 0;
+}
 fieldset,
 input,
 select,
