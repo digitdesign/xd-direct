@@ -7,6 +7,7 @@
 <br />
 <hr />
 <br />
+
 ### Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
 - Clone the repository using the command below:
