@@ -1,3 +1,10 @@
+<div align="center">
+	<img src="https://privacdn.com/godigit/digit-xd.svg" height="64">
+	<h3 align="center">Digit XD</h3>
+	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.</p>
+	<p align="center"><a href="https://github.com/digitdesign/digitxd/releases/latest"><img src="https://img.shields.io/github/release/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/find/master"><img src="https://img.shields.io/github/repo-size/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/search?l=css"><img src="https://img.shields.io/github/languages/top/digitdesign/digitxd.svg" alt=""></a></p>
+</div>
+
 ![Digit XD](https://privacdn.com/godigit/digit-xd-hero.png)
 # Digit XD: Experience Design Framework
 [![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg)]() [![Github commits (since latest release)](https://img.shields.io/github/commits-since/digitdesign/digitxd/latest.svg)]() [![GitHub last commit](https://img.shields.io/github/last-commit/digitdesign/digitxd.svg)]() [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/digitdesign/digitxd.svg)]() [![GitHub top language](https://img.shields.io/github/languages/top/digitdesign/digitxd.svg)]() [![GitHub issues](https://img.shields.io/github/issues/digitdesign/digitxd.svg)]() [![license](https://img.shields.io/github/license/digitdesign/digitxd.svg)]()
