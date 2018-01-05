@@ -54,3 +54,13 @@ img {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+
+// Prevent text-selection
+button,
+video,
+.input-addon {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}

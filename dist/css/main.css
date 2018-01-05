@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.4 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.3.5 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *::after,
 *::before {
@@ -688,6 +688,14 @@ img {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+button,
+video,
+.input-addon {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -874,10 +882,6 @@ section:first-child {
   border-right: 0;
   border-radius: 2px 0 0 2px;
   font-size: 1.4rem;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 .input-group > input {
   margin: 0;
@@ -1186,10 +1190,6 @@ section:first-child {
   color: #999;
   pointer-events: none;
   text-decoration: line-through;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 .border-muted {
   color: #999;
