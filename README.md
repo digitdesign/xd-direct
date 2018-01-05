@@ -20,4 +20,4 @@ Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/iss
 This project is created and maintained by [Digit Design](https://godigit.design/).
 
 ## Support
-[Send support request →](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD).
+[Send support request →](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD)
