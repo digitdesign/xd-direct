@@ -5,26 +5,23 @@
 	<p align="center"><a href="https://github.com/digitdesign/digitxd/releases/latest"><img src="https://img.shields.io/github/release/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/find/master"><img src="https://img.shields.io/github/repo-size/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/search?l=css"><img src="https://img.shields.io/github/languages/top/digitdesign/digitxd.svg" alt=""></a></p>
 </div>
 
-![Digit XD](https://privacdn.com/godigit/digit-xd-hero.png)
-# Digit XD: Experience Design Framework
-[![GitHub release](https://img.shields.io/github/release/digitdesign/digitxd.svg)]() [![Github commits (since latest release)](https://img.shields.io/github/commits-since/digitdesign/digitxd/latest.svg)]() [![GitHub last commit](https://img.shields.io/github/last-commit/digitdesign/digitxd.svg)]() [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/digitdesign/digitxd.svg)]() [![GitHub top language](https://img.shields.io/github/languages/top/digitdesign/digitxd.svg)]() [![GitHub issues](https://img.shields.io/github/issues/digitdesign/digitxd.svg)]() [![license](https://img.shields.io/github/license/digitdesign/digitxd.svg)]()
-> Digit Experience Design Kit is a robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms. For more information visit the [Digit XD Website](https://digitxd.com/).
+<hr />
 
-## Installation
+### Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
 - Clone the repository using the command below:
 ```sh
 git clone https://github.com/digitdesign/digitxd.git
 ```
 
-## Contributing
+### Contributing
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR.
 
-## License
+### License
 © 2016 – 2017 Go Digit General Insurance Ltd.
 
-## Acknowledgement
+### Acknowledgement
 This project is created and maintained by [Digit Design](https://godigit.design/).
 
-## Support
+### Support
 [Send support request →](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD)

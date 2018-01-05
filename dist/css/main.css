@@ -690,7 +690,9 @@ img {
 }
 .button,
 button,
-video,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
 .input-addon {
   -ms-user-select: none;
   -moz-user-select: none;
