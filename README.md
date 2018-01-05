@@ -4,7 +4,7 @@
 	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework designed to create a consistent experience across platforms.</p>
 	<p align="center"><a href="https://github.com/digitdesign/digitxd/releases/latest"><img src="https://img.shields.io/github/release/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/find/master"><img src="https://img.shields.io/github/repo-size/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/search?l=css"><img src="https://img.shields.io/github/languages/top/digitdesign/digitxd.svg" alt=""></a></p>
 </div>
-
+<br />
 <hr />
 
 ### Installation
