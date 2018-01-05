@@ -11,13 +11,13 @@ git clone https://github.com/digitdesign/digitxd.git
 ```
 
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR
+Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR.
 
 ## License
 © 2016 – 2017 Go Digit General Insurance Ltd.
 
 ## Acknowledgement
-This project is created and maintained by [Digit Design](https://godigit.design/)
+This project is created and maintained by [Digit Design](https://godigit.design/).
 
 ## Support
-[Send support request](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD)
+[Send support request →](mailto:shaan.shivanandan@godigit.com?Subject=Support%3A%20Digit%20XD).
