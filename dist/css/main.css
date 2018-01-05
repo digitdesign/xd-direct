@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.3 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.3.4 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *::after,
 *::before {
@@ -351,8 +351,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background: #FB0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FC3), to(#FB0));
   background: linear-gradient(to bottom, #FC3, #FB0);
@@ -563,8 +561,6 @@ select:focus {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
 textarea:disabled,
 select:disabled {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background: #EEE;
   border-color: #EEE;
   cursor: not-allowed;
@@ -655,6 +651,18 @@ pre,
 table,
 ul {
   margin-bottom: 16px;
+}
+a,
+button,
+input [type],
+textarea,
+select,
+video,
+img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 table {
   border-collapse: collapse;
