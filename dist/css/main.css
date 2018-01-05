@@ -688,6 +688,7 @@ img {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.button,
 button,
 video,
 .input-addon {
