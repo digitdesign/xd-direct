@@ -948,13 +948,13 @@ section:first-child {
   padding: 0;
 }
 .padding-less {
-  padding: 2%;
+  padding: 24px;
 }
 .padding-medium {
-  padding: 4%;
+  padding: 32px;
 }
 .padding-more {
-  padding: 6%;
+  padding: 48px;
 }
 .width-25 {
   width: 25%;
