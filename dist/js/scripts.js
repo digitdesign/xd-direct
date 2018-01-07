@@ -32,7 +32,7 @@ $("input[type=password]:not([autocorrect])").attr("autocorrect", "off");
 $("input[type=search]:not([spellcheck])").attr("spellcheck", "false");
 $("input[type=search]:not([autocorrect])").attr("autocorrect", "off");
 
-// External Link Treatment
+// External link treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("a").filter(function () {
 	return this.hostname && this.hostname !== location.hostname;
@@ -41,7 +41,7 @@ $("a").filter(function () {
 	rel: "nofollow noreferrer noopener"
 });
 
-// External Link Treatment
+// Required input field treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $(document).ready(function () {
 	$("input[required]").each(function (index) {
