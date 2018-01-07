@@ -607,6 +607,11 @@ label {
   font-weight: 600;
   margin: 0 0 4px 2px;
 }
+.label.required:after,
+label.required:after {
+  content: " /002A";
+  color: #F43;
+}
 .label-inline {
   display: inline-block;
 }
