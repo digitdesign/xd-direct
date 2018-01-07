@@ -615,8 +615,6 @@ label.optional:after {
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: -12px;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
 }
 legend {
   -webkit-box-sizing: border-box;

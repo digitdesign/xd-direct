@@ -147,7 +147,7 @@ $("input[type=email]").on("keyup", function (event) {
 $(document).ready(function () {
 	$("input[type=email]").on("keyup", function () {
 		if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
-			$("input[type=email]").after('<p class="helper-text">Please enter a valid email address</p>');
+			$("input[type=email]").after('<p class="helper-text text-danger">Please enter a valid email address</p>');
 		}
 	});
 });
