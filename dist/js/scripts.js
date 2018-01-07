@@ -43,9 +43,7 @@ $("a").filter(function () {
 
 // External Link Treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[required]").insertBefore(
-	$("<span>").addClass("required").text("*")
-);
+("<span>").addClass("required").text(" *").insertBefore("input[required]");
 
 // HTML HEX entities
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
