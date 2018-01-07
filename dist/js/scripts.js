@@ -121,33 +121,42 @@ $("article:not([role])").attr("role", "article");
 $("aside:not([role])").attr("role", "complementary");
 $("footer:not([role])").attr("role", "contentinfo");
 
-// Email extensions autocomplete
+// Email extensions autocomplete (To Be Fixed)
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[type=email]").on("keyup", function (event) {
-	var value = $(this).val();
-	var bindTo = $("input[type=email]");
-	var datalist = $("<datalist />", {
-		id: "email-options"
-	}).insertAfter(bindTo);
-	bindTo.attr("list", "email-options");
-	var domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"];
-	var siteDomains = ["Gmail", "Yahoo", "Hotmail", "Outlook"];
-	if (value.indexOf("@") != -1) {
-		value = value.split("@")[0];
-		newOptionsString = "";
-		for (var i = 0; i < domains.length; i++) {
-			newOptionsString += "<option value='" + value + "@" + domains[i] + "'>" + siteDomains[i];
-		}
-		datalist.html(newOptionsString);
-	} else {}
-});
+//	$("input[type=email]").on("keyup", function (event) {
+//		var value = $(this).val();
+//		var bindTo = $("input[type=email]");
+//		var datalist = $("<datalist />", {
+//			id: "email-options"
+//		}).insertAfter(bindTo);
+//		bindTo.attr("list", "email-options");
+//		var domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"];
+//		var siteDomains = ["Gmail", "Yahoo", "Hotmail", "Outlook"];
+//		if (value.indexOf("@") != -1) {
+//			value = value.split("@")[0];
+//			newOptionsString = "";
+//			for (var i = 0; i < domains.length; i++) {
+//				newOptionsString += "<option value='" + value + "@" + domains[i] + "'>" + siteDomains[i];
+//			}
+//			datalist.html(newOptionsString);
+//		} else {}
+//	});
 
-// Form validation
+// Form validation (To Be Fixed)
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$(document).ready(function () {
-	$("input[type=email]").on("keyup", function () {
-		if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
-			$("input[type=email]").after('<p class="helper-text text-danger">Please enter a valid email address</p>');
-		}
-	});
-});
+//	$(document).ready(function () {
+//		$("input[type=email]").on("keyup", function () {
+//			if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
+//				$("input[type=email]").after('<p class="helper-text text-danger">Please enter a valid email address</p>');
+//			}
+//		});
+//	});
+
+//	$("input[type=number]").onBlur(function () {
+//		$("p.text-validation").hide();
+//		var inputVal = $(this).val();
+//		var numericReg = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
+//		if (!numericReg.test(inputVal)) {
+//			$(this).after('<p class="text-validation text-danger">Please enter a valid number (0-9)</p>');
+//		}
+//	});
