@@ -41,6 +41,10 @@ $("a").filter(function () {
 	rel: "nofollow noreferrer noopener"
 });
 
+// External Link Treatment
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$("input[type][required]").append("<span>").addClass("required").text("*");
+
 // HTML HEX entities
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function escapeHtml(unsafe) {
