@@ -772,6 +772,9 @@ th:last-child {
   display: -ms-flexbox;
   display: flex;
 }
+.navbar > a.button {
+  margin: 0;
+}
 a.link {
   -webkit-box-align: center;
   -ms-flex-align: center;
