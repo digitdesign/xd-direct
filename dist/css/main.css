@@ -811,7 +811,7 @@ img.brand {
   margin-right: 34px;
   min-height: 32px;
 }
-.footer {
+footer {
   background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.04) 2px, transparent) no-repeat border-box;
   background-color: #FFF;
   font-size: 1.15rem;
