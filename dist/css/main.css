@@ -340,11 +340,11 @@ a:focus {
   text-decoration-skip: ink;
 }
 a:focus {
-  outline: thin dotted;
+  outline: 1px dotted #000;
 }
 a:visited {
-  -webkit-filter: brightness(92%);
-  filter: brightness(92%);
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
 }
 .button,
 button,
