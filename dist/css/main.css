@@ -741,9 +741,11 @@ th:last-child {
   overflow: hidden;
 }
 .navbar .toggle {
-  display: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  display: none;
+  -webkit-filter: none;
+  filter: none;
   -webkit-tap-highlight-color: transparent;
 }
 .navbar .brand {
