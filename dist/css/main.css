@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.7 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.3.8 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -334,7 +334,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #F61;
+  color: #E33;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
