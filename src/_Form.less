@@ -90,7 +90,7 @@ label {
 	margin: 0 0 4px 2px;
 	&.optional {
 		&:after {
-			color: #888;
+			color: @grey-600;
 			content: " (Optional)";
 		}
 	}
@@ -104,6 +104,8 @@ label {
 	font-size: 1.1rem;
 	font-weight: 600;
 	margin-top: -12px;
+	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
 }
 
 legend {
