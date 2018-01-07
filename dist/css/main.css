@@ -609,7 +609,7 @@ label {
 }
 .label.required:after,
 label.required:after {
-  content: " /002A";
+  content: " \002A";
   color: #F43;
 }
 .label-inline {
