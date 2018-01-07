@@ -43,7 +43,7 @@ $("a").filter(function () {
 
 // External Link Treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[type][required]").prepend(
+$("input[required]").prepend(
 	$("<span>").addClass("required").text("*")
 );
 
