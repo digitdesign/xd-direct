@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.5 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.3.6 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *::after,
 *::before {
@@ -818,7 +818,7 @@ footer {
   height: -moz-max-content;
   height: -webkit-max-content;
   height: max-content;
-  padding: 1.4%;
+  padding: 20px;
   position: relative;
   bottom: 0;
   left: 0;
