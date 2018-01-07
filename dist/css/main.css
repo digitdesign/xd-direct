@@ -826,6 +826,9 @@ footer {
   margin-top: 24px;
   text-align: center;
 }
+footer > p {
+  margin: 0;
+}
 section:first-child {
   margin-top: 3%;
 }
