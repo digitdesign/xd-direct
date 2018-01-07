@@ -141,3 +141,13 @@ $("input[type=email]").on("keyup", function (event) {
 		datalist.html(newOptionsString);
 	} else {}
 });
+
+// Form validation
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$(document).ready(function () {
+	$("input[type=email]").on("keypress keydown keyup", function () {
+		if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
+			$.after('<p class="helper-text">Please enter a valid URL</p>');
+		}
+	});
+});
