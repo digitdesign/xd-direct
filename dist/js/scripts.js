@@ -144,10 +144,10 @@ $("input[type=email]").on("keyup", function (event) {
 
 // Form validation
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$(document).ready(function () {
-	$("input[type=email]").on("keypress keydown keyup", function () {
-		if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
-			$("input[type=email]").after('<p class="helper-text">Please enter a valid URL</p>');
-		}
-	});
-});
+//	$(document).ready(function () {
+//		$("input[type=email]").on("keypress keydown keyup", function () {
+//			if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
+//				$("input[type=email]").after('<p class="helper-text">Please enter a valid URL</p>');
+//			}
+//		});
+//	});
