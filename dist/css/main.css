@@ -605,8 +605,8 @@ label {
 }
 .label.required:after,
 label.required:after {
-  content: " \002A";
-  color: #F43;
+  color: #888;
+  content: "\FF08Optional\FF09";
 }
 .label-inline {
   display: inline-block;
