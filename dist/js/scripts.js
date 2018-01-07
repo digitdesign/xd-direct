@@ -43,7 +43,12 @@ $("a").filter(function () {
 
 // External Link Treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-("<span>").addClass("required").text(" *").insertBefore("input[required]");
+$(document).ready(function () {
+	$("input[required]").each(function (index) {
+		var id = $(this).attr('id');
+		$('label[for="' + id + '"]').append('*');
+	});
+});
 
 // HTML HEX entities
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
