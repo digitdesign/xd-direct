@@ -606,7 +606,7 @@ label {
 .label.optional:after,
 label.optional:after {
   color: #888;
-  content: "\FF08Optional\FF09";
+  content: " (Optional)";
 }
 .label-inline {
   display: inline-block;
