@@ -9,7 +9,7 @@ input[type="submit"] {
 	background: -webkit-gradient(linear, left top, left bottom, from(@amber-200), to(@amber-300));
 	background: linear-gradient(to bottom, @amber-200, @amber-300);
 	background-origin: border-box;
-	border: 1px solid rgba(0, 0, 0, .06);
+	border: 1px solid rgba(0, 0, 0, .08);
 	border-radius: @border-radius;
 	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
 	box-shadow: 0 1px 1px rgba(255, 255, 255, .3) inset;
@@ -66,11 +66,6 @@ input[type="submit"] {
 	&.secondary {
 		background: -webkit-gradient(linear, left top, left bottom, from(@white), to(@grey-50));
 		background: linear-gradient(to bottom, @white, @grey-50);
-		background-origin: border-box;
-		border: 1px solid rgba(0, 0, 0, 0.08);
-		color: #000;
-		-webkit-filter: brightness(99%);
-		filter: brightness(99%);
 		&:focus,
 		&:hover {
 			cursor: pointer;
