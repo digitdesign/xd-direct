@@ -1,4 +1,4 @@
-/*! Digit XD v1.3.8 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.3.9 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -445,6 +445,7 @@ input[type="reset"].secondary,
 input[type="submit"].secondary {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
   background: linear-gradient(to bottom, #FFF, #EEE);
+  background-origin: border-box;
 }
 .button.secondary:focus,
 button.secondary:focus,
