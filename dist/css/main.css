@@ -603,8 +603,8 @@ label {
   font-weight: 600;
   margin: 0 0 4px 2px;
 }
-.label.required:after,
-label.required:after {
+.label.optional:after,
+label.optional:after {
   color: #888;
   content: "\FF08Optional\FF09";
 }
