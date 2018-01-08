@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: #FFF;
-  color: #444;
+  color: #222;
   font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.6;
@@ -364,6 +364,9 @@ input[type="submit"] {
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: 600;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 11px 20px;
   text-align: center;
   text-decoration: none;
