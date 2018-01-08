@@ -768,12 +768,12 @@ th:last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.navbar img {
+.navbar .brand {
   border-color: transparent;
   max-height: 64px;
   margin-right: 32px;
 }
-.navbar a:not(.button):not(img) {
+.navbar a:not(.button):not(.brand) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -789,15 +789,15 @@ th:last-child {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar a:not(.button):not(img):hover {
+.navbar a:not(.button):not(.brand):hover {
   border-bottom: 2px solid #DDD;
   color: #000;
 }
-.navbar a:not(.button):not(img).active {
+.navbar a:not(.button):not(.brand).active {
   border-color: #FB0;
   color: #000;
 }
-.navbar a:not(.button):not(img).active:hover {
+.navbar a:not(.button):not(.brand).active:hover {
   border-color: #FB0;
 }
 img.brand {
