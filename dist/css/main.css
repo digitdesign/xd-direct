@@ -784,11 +784,6 @@ th:last-child {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar a:not(.button) .brand {
-  border-bottom-color: transparent;
-  margin-right: 28px;
-  max-height: 77px;
-}
 .navbar a:not(.button):hover {
   border-bottom: 2px solid #DDD;
   color: #000;
@@ -799,6 +794,11 @@ th:last-child {
 }
 .navbar a:not(.button).active:hover {
   border-color: #FB0;
+}
+.navbar a:not(.button).brand {
+  border-bottom-color: transparent;
+  margin-right: 28px;
+  max-height: 77px;
 }
 img.brand {
   -webkit-box-align: stretch;
