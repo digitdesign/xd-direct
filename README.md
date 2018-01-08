@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://privacdn.com/godigit/digit-xd.svg" height="64">
+	<img src="https://privacdn.com/godigit/digit-xd.svg" height="64" alt="XD">
 	<h3 align="center">Digit XD</h3>
 	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework for Digit Insurance.</p>
 	<p align="center"><a href="https://github.com/digitdesign/digitxd/releases/latest"><img src="https://img.shields.io/github/release/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/find/master"><img src="https://img.shields.io/github/repo-size/digitdesign/digitxd.svg" alt=""></a> <a href="https://github.com/digitdesign/digitxd/search?l=css"><img src="https://img.shields.io/github/languages/top/digitdesign/digitxd.svg" alt=""></a></p>
@@ -9,7 +9,7 @@
 
 ### Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
-- Clone the repository using the command below:
+- Clone the repository via command line:
 ```sh
 git clone https://github.com/digitdesign/digitxd.git
 ```
