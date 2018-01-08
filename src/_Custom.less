@@ -33,7 +33,12 @@
 		-ms-flex-pack: end;
 		justify-content: flex-end;
 	}
-	& a:not(.button) {
+	&.brand {
+		border-bottom-color: transparent;
+		margin-right: 28px;
+		max-height: 77px;
+	}
+	& a:not(.button, .brand) {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
@@ -58,11 +63,6 @@
 			&:hover {
 				border-color: @amber-300;
 			}
-		}
-		&.brand {
-			border-bottom-color: transparent;
-			margin-right: 28px;
-			max-height: 77px;
 		}
 	}
 }
