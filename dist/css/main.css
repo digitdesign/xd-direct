@@ -1,4 +1,4 @@
-/*! Digit XD v1.4.1 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.4.2 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -548,7 +548,7 @@ select::-webkit-inner-spin-button {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):focus,
 textarea:focus,
 select:focus {
-  border-color: #F90;
+  border-color: #FA0;
   -webkit-box-shadow: 0 0 0 2px #FEA;
   box-shadow: 0 0 0 2px #FEA;
   outline: 0;
