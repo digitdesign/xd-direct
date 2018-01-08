@@ -1273,7 +1273,7 @@ section:first-child {
     border-left: 2px solid #FB0;
     border-bottom: 0;
   }
-  a.link .navbar a.button {
+  a.link .navbar > a.button {
     display: block;
     margin: 12px;
   }
