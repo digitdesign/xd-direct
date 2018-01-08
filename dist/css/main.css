@@ -1303,7 +1303,7 @@ section:first-child {
   .navbar.active div {
     display: block;
   }
-  .navbar > a.button {
+  .navbar a.button {
     display: block;
     margin: 12px;
   }
