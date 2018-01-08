@@ -754,6 +754,11 @@ th:last-child {
   filter: none;
   -webkit-tap-highlight-color: transparent;
 }
+.navbar .brand {
+  height: 100%;
+  padding: 14px;
+  vertical-align: middle;
+}
 .navbar .left,
 .navbar .right {
   display: -webkit-box;
@@ -768,12 +773,12 @@ th:last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.navbar .brand {
-  border-color: transparent;
-  max-height: 64px;
-  margin-right: 32px;
+.navbar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.navbar a:not(.button):not(.brand) {
+a.link {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -784,20 +789,19 @@ th:last-child {
   display: flex;
   font-size: 1.3rem;
   font-weight: 600;
-  height: 68px;
-  padding: 24px 12px;
+  padding: 28px 12px;
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar a:not(.button):not(.brand):hover {
+a.link:hover {
   border-bottom: 2px solid #DDD;
   color: #000;
 }
-.navbar a:not(.button):not(.brand).active {
+a.link.active {
   border-color: #FB0;
   color: #000;
 }
-.navbar a:not(.button):not(.brand).active:hover {
+a.link.active:hover {
   border-color: #FB0;
 }
 img.brand {

@@ -19,6 +19,11 @@
 		filter: none;
 		-webkit-tap-highlight-color: transparent;
 	}
+	& .brand {
+		height: 100%;
+		padding: 14px;
+		vertical-align: middle;
+	}
 	& .left,
 	& .right {
 		display: -webkit-box;
@@ -33,36 +38,36 @@
 		-ms-flex-pack: end;
 		justify-content: flex-end;
 	}
-	& .brand {
-		border-color: transparent;
-		max-height: 64px;
-		margin-right: 32px;
-	}
-	& a:not(.button):not(.brand) {
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		border-bottom: 2px solid transparent;
-		color: @grey-600;
+	& div {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		font-size: 1.3rem;
-		font-weight: 600;
-		height: 68px;
-		padding: 24px 12px;
-		text-decoration: none;
-		white-space: nowrap;
+	}
+}
+
+a.link {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 2px solid transparent;
+	color: @grey-600;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 28px 12px;
+	text-decoration: none;
+	white-space: nowrap;
+	&:hover {
+		border-bottom: 2px solid @grey-100;
+		color: @black;
+	}
+	&.active {
+		border-color: @amber-300;
+		color: @black;
 		&:hover {
-			border-bottom: 2px solid @grey-100;
-			color: @black;
-		}
-		&.active {
 			border-color: @amber-300;
-			color: @black;
-			&:hover {
-				border-color: @amber-300;
-			}
 		}
 	}
 }
