@@ -773,7 +773,7 @@ th:last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.navbar > a {
+.navbar div > a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -788,15 +788,15 @@ th:last-child {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar > a:hover {
+.navbar div > a:hover {
   border-bottom: 2px solid #DDD;
   color: #000;
 }
-.navbar > a.active {
+.navbar div > a.active {
   border-color: #FB0;
   color: #000;
 }
-.navbar > a.active:hover {
+.navbar div > a.active:hover {
   border-color: #FB0;
 }
 img.brand {
