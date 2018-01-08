@@ -768,7 +768,7 @@ th:last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.navbar img > .brand {
+.navbar .brand {
   border-bottom-color: transparent;
   margin-right: 28px;
   max-height: 77px;
