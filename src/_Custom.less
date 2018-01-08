@@ -33,6 +33,11 @@
 		-ms-flex-pack: end;
 		justify-content: flex-end;
 	}
+	& a > .brand {
+		border-bottom-color: transparent;
+		margin-right: 28px;
+		max-height: 77px;
+	}
 	& div > a:not(.button) {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
@@ -47,11 +52,6 @@
 		padding: 24px 12px;
 		text-decoration: none;
 		white-space: nowrap;
-		&.brand {
-			border-bottom-color: transparent;
-			margin-right: 28px;
-			max-height: 77px;
-		}
 		&:hover {
 			border-bottom: 2px solid @grey-100;
 			color: @black;

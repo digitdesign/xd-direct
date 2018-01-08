@@ -768,6 +768,11 @@ th:last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
+.navbar a > .brand {
+  border-bottom-color: transparent;
+  margin-right: 28px;
+  max-height: 77px;
+}
 .navbar div > a:not(.button) {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -782,11 +787,6 @@ th:last-child {
   padding: 24px 12px;
   text-decoration: none;
   white-space: nowrap;
-}
-.navbar div > a:not(.button).brand {
-  border-bottom-color: transparent;
-  margin-right: 28px;
-  max-height: 77px;
 }
 .navbar div > a:not(.button):hover {
   border-bottom: 2px solid #DDD;
