@@ -773,7 +773,7 @@ th:last-child {
   max-height: 64px;
   margin-right: 32px;
 }
-.navbar a:not(.button):not(.brand) {
+.navbar a:not(.button):not(img) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -789,15 +789,15 @@ th:last-child {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar a:not(.button):not(.brand):hover {
+.navbar a:not(.button):not(img):hover {
   border-bottom: 2px solid #DDD;
   color: #000;
 }
-.navbar a:not(.button):not(.brand).active {
+.navbar a:not(.button):not(img).active {
   border-color: #FB0;
   color: #000;
 }
-.navbar a:not(.button):not(.brand).active:hover {
+.navbar a:not(.button):not(img).active:hover {
   border-color: #FB0;
 }
 img.brand {
