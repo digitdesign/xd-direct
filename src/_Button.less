@@ -50,13 +50,6 @@ input[type="submit"] {
 		-webkit-transition: 0s;
 		transition: 0s;
 	}
-	&[disabled] {
-		background: @grey-100;
-		border-color: inherit;
-		color: @grey-700;
-		cursor: not-allowed;
-		pointer-events: none;
-	}
 	&.loading {
 		background: @amber-300 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23444%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center/40px;
 		color: transparent !important;
@@ -89,15 +82,6 @@ input[type="submit"] {
 			-webkit-transition: 0s;
 			transition: 0s;
 		}
-		&[disabled] {
-			&:focus,
-			&:hover {
-				border-color: inherit;
-				color: @grey-300;
-				cursor: not-allowed;
-				pointer-events: none;
-			}
-		}
 		&.loading {
 			background: @white url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23FB0%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center/40px;
 			color: transparent !important;
@@ -107,6 +91,17 @@ input[type="submit"] {
 				color: transparent !important;
 				cursor: default;
 			}
+		}
+	}
+	&[disabled] {
+		background: @grey-light;
+		border-color: transparent;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		color: @grey-600;
+		font-weight: 400;
+		&:hover {
+			cursor: not-allowed;
 		}
 	}
 }
