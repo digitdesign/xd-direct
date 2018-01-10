@@ -155,6 +155,40 @@ section:first-child {
 	}
 }
 
+// Divider
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.divider {
+	line-height: 0;
+	margin-bottom: 14px;
+	padding-top: 1px;
+	position: relative;
+	text-align: center;
+	top: 2px;
+	& h5 {
+		background-color: @white;
+		color: @grey-700;
+		display: inline-block;
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 1;
+		padding: 0 8px;
+		position: relative;
+		z-index: 2;
+	}
+	&:after {
+		content: "";
+		width: 100%;
+		background-color: transparent;
+		display: block;
+		height: 1px;
+		border-top: 1px solid @grey-100;
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+		z-index: 1;
+	}
+}
+
 // Input Group & Addons
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .input-group {
