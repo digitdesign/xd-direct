@@ -509,6 +509,8 @@ input[type="button"][disabled]:hover,
 input[type="reset"][disabled]:hover,
 input[type="submit"][disabled]:hover {
   cursor: not-allowed;
+  -webkit-filter: none;
+  filter: none;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]),
 textarea,
