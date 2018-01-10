@@ -500,8 +500,7 @@ input[type="submit"][disabled] {
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #888;
-  font-weight: 400;
+  color: #999;
 }
 .button[disabled]:hover,
 button[disabled]:hover,
