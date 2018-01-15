@@ -1,4 +1,4 @@
-/*! Digit XD v1.4.3 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.4.4 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -811,7 +811,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 24px;
+  margin-top: 48px;
   text-align: center;
 }
 footer > p {
