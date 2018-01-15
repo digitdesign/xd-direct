@@ -1,4 +1,4 @@
-/*! Digit XD v1.4.4 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Digit XD v1.4.5 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -324,7 +324,7 @@ ol {
 ul {
   list-style: disc inside;
 }
-a {
+a:not([button]):not([.button]) {
   color: #26F;
   cursor: pointer;
   text-decoration: none;
@@ -332,18 +332,15 @@ a {
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
-a:hover,
-a:focus {
+a:not([button]):not([.button]):hover,
+a:not([button]):not([.button]):focus {
   color: #E33;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
 }
-a:focus {
+a:not([button]):not([.button]):focus {
   outline: 1px dotted #000;
-}
-a:visited {
-  color: #04A;
 }
 .button,
 button,

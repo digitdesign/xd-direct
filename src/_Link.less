@@ -1,6 +1,6 @@
 // Link
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-a {
+a:not([button]):not([.button]) {
 	color: @blue-A700;
 	cursor: pointer;
 	text-decoration: none;
@@ -16,8 +16,5 @@ a {
 	}
 	&:focus {
 		outline: 1px dotted @black;
-	}
-	&:visited {
-		color: @blue-900;
 	}
 }
