@@ -561,7 +561,7 @@ input[type="radio"]:disabled {
   opacity: .6;
 }
 input[type="color"] {
-  padding: 0;
+  padding: 0 !important;
 }
 input[type="color"]::-webkit-color-swatch {
   border: 4px solid #FFF;
