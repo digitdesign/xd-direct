@@ -359,6 +359,7 @@ input[type="submit"] {
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: 600;
+  height: 40px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -493,8 +494,8 @@ input[type="submit"][disabled]:hover {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]),
 textarea,
 select {
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   border: 1px solid #CCC;
@@ -507,7 +508,9 @@ select {
   width: 100%;
   font-family: inherit;
   font-size: 1.4rem;
+  height: 40px;
   color: #222;
+  line-height: 1;
   text-overflow: ellipsis;
   -webkit-transition: all 65ms ease-in-out;
   transition: all 65ms ease-in-out;
@@ -685,6 +688,9 @@ table {
 }
 tr {
   border-bottom: 1px solid #EEE;
+}
+tr:last-child {
+  border-bottom: 0;
 }
 caption {
   font-size: 1.8rem;
