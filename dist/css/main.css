@@ -331,7 +331,7 @@ ol {
 ul {
   list-style: disc inside;
 }
-a:not([button]):not([.button]) {
+a:not(button):not(.button) {
   color: #26F;
   cursor: pointer;
   text-decoration: none;
@@ -339,14 +339,14 @@ a:not([button]):not([.button]) {
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
-a:not([button]):not([.button]):hover,
-a:not([button]):not([.button]):focus {
+a:not(button):not(.button):hover,
+a:not(button):not(.button):focus {
   color: #E33;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
 }
-a:not([button]):not([.button]):focus {
+a:not(button):not(.button):focus {
   outline: 1px dotted #000;
 }
 .button,
