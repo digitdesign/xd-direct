@@ -713,6 +713,12 @@ tr {
 tr:last-child {
   border-bottom: 0;
 }
+tr :last-of-type {
+  padding-bottom: 0;
+}
+tr :last-of-type > td {
+  padding-bottom: 0;
+}
 caption {
   font-size: 1.8rem;
   font-weight: bold;

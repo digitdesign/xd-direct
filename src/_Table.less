@@ -11,6 +11,12 @@ tr {
 	&:last-child {
 		border-bottom: 0;
 	}
+	:last-of-type {
+		padding-bottom: 0;
+		& > td {
+			padding-bottom: 0;
+		}
+	}
 }
 
 caption {
