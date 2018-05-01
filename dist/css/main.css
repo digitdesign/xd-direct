@@ -1,7 +1,7 @@
 /*! Copyright (c) 2018 Go Digit General Insurance Ltd. or its affiliates */
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -327,7 +327,7 @@ ul {
   list-style: disc inside;
 }
 a {
-  color: #26F;
+  color: #29F;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: all 65ms ease-in-out;
@@ -527,8 +527,8 @@ input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([t
 textarea:focus,
 select:focus {
   border-color: #FA0;
-  -webkit-box-shadow: 0 0 0 2px #FEA;
-  box-shadow: 0 0 0 2px #FEA;
+  -webkit-box-shadow: 0 0 0 2px #FE9;
+  box-shadow: 0 0 0 2px #FE9;
   outline: 0;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
@@ -821,7 +821,6 @@ img.brand {
   min-height: 32px;
 }
 footer {
-  background: #FFF linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF);
   font-size: 1.15rem;
   height: max-content;
   padding: 20px;
@@ -1221,7 +1220,7 @@ section:first-child {
   color: #222;
 }
 .text-link {
-  color: #26F;
+  color: #29F;
 }
 .broken-link {
   color: #999;
@@ -1361,7 +1360,7 @@ section:first-child {
     border: 0 !important;
   }
   a {
-    color: #26F;
+    color: #29F;
     text-decoration: underline;
     text-decoration-skip: ink;
   }
@@ -1374,3 +1373,4 @@ section:first-child {
     content: "" !important;
   }
 }
+/*# sourceMappingURL=digit.css.map */
