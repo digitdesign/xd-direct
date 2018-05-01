@@ -1,6 +1,10 @@
-// Button
+// Imports
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 @import "_Colour";
+@import "_Utility";
+
+// Buttons
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 .button,
 button,
 input[type="button"],
@@ -8,7 +12,7 @@ input[type="reset"],
 input[type="submit"] {
 	background: @amber-300;
 	background-origin: border-box;
-	border: 1px solid rgba(0, 0, 0, .065);
+	border: 1px solid transparent;
 	border-radius: @border-radius;
 	color: @black;
 	cursor: pointer;
