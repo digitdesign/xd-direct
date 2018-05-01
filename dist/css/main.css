@@ -1,4 +1,4 @@
-/*! Digit XD v1.4.5 | (c) 2016-2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Copyright (c) 2018 Go Digit General Insurance Ltd. or its affiliates */
 *,
 *:after,
 *:before {
@@ -128,8 +128,6 @@ blockquote *:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: col;
-  flex-direction: col;
   float: left;
   padding: 0;
   width: 100%;
@@ -247,15 +245,12 @@ blockquote *:last-child {
   max-width: 100%;
 }
 .col-top {
-  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 .col-bottom {
-  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 .col-center {
-  -ms-flex-item-align: center;
   align-self: center;
 }
 audio,
@@ -343,7 +338,6 @@ a:hover,
 a:focus {
   color: #E33;
   text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
 }
 a:focus {
@@ -503,7 +497,6 @@ textarea,
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
   background-color: transparent;
   border: 1px solid #CCC;
   border-radius: 2px;
@@ -528,7 +521,6 @@ textarea::-webkit-inner-spin-button,
 select::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   display: none;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):focus,
@@ -747,8 +739,8 @@ th:last-child {
   -ms-flex-align: center;
   align-items: center;
   background: #FFF;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,17 +816,13 @@ img.brand {
   display: flex;
   font-size: 1em;
   font-weight: bold;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 34px;
   min-height: 32px;
 }
 footer {
-  background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF) no-repeat border-box, linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.04) 2px, transparent) no-repeat border-box;
-  background-color: #FFF;
+  background: #FFF linear-gradient(to right, #FFF, rgba(0, 0, 0, 0), #FFF);
   font-size: 1.15rem;
-  height: -moz-max-content;
-  height: -webkit-max-content;
   height: max-content;
   padding: 20px;
   position: relative;
@@ -1327,7 +1315,6 @@ section:first-child {
   }
   .navbar .toggle,
   .navbar .brand {
-    display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     text-decoration: none;
@@ -1376,7 +1363,6 @@ section:first-child {
   a {
     color: #26F;
     text-decoration: underline;
-    -webkit-text-decoration-skip: ink;
     text-decoration-skip: ink;
   }
   a[href]:after {

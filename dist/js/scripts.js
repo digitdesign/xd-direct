@@ -1,162 +1,20 @@
-/*! Digit XD JavaScript | (c) 2016–2018, Go Digit General Insurance Ltd. or its affiliates */
+/*! Copyright (c) 2018 Go Digit General Insurance Ltd. or its affiliates */
 
 // Navbar
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$(".toggle").on("click", function () {
-	$(".toggle").parent().toggleClass("active");
+document.getElementsByClassName('.toggle').onclick(function () {
+	document.getElementsByClassName('.toggle').parent.toggleClass("active");
 });
 
 // Image ALT text
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("img:not([alt])").attr("alt", "");
-
-// Inline styles remover
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("* [style]").removeAttr("style");
-
-// Deprecated attributes remover
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("*").removeAttr("align background bgcolor border clear size");
-$("table").removeAttr("cellpadding cellspacing width height");
-$("link[type]").removeAttr("type");
-$("script[type]").removeAttr("type");
-
-// Input spellcheck/autocorrect rules
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[type=email]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=email]:not([autocorrect])").attr("autocorrect", "off");
-$("input[type=url]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=url]:not([autocorrect])").attr("autocorrect", "off");
-$("input[type=password]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=password]:not([autocorrect])").attr("autocorrect", "off");
-$("input[type=search]:not([spellcheck])").attr("spellcheck", "false");
-$("input[type=search]:not([autocorrect])").attr("autocorrect", "off");
+$("img:not([alt])").setAttribute("alt", "");
 
 // External link treatment
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $("a").filter(function () {
 	return this.hostname && this.hostname !== location.hostname;
-}).attr({
+}).setAttribute({
 	target: "_blank",
 	rel: "nofollow noreferrer noopener"
 });
-
-// Required input field treatment
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$(document).ready(function () {
-	$("input[type]:not([required])").each(function (index) {
-		var id = $(this).attr('id');
-		$('label[for="' + id + '"]').addClass("optional");
-	});
-});
-
-// HTML HEX entities
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-function escapeHtml(unsafe) {
-	return unsafe
-		.replace(/“/g, "&#x201C;")
-		.replace(/”/g, "&#x201D;")
-		.replace(/‘/g, "&#x2018;")
-		.replace(/’/g, "&#x2019;")
-		.replace(/–/g, "&#x2013;")
-		.replace(/—/g, "&#x2014;")
-		.replace(/&/g, "&#x26;")
-		.replace(/…/g, "&#x2026;")
-		.replace(/•/g, "&#x2022;")
-		.replace(/₹/g, "&#x20B9;");
-}
-
-// ARIA states
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("input[type][checked]:not([aria-checked])").attr("aria-checked", "true");
-$("input[type][readonly]:not([aria-readonly])").attr("aria-readonly", "true");
-$("input[type][disabled]:not([aria-disabled])").attr("aria-disabled", "true");
-$("input[type][required]:not([aria-checked])").attr("aria-checked", "true");
-$("input[type][hidden]:not([aria-hidden])").attr("aria-hidden", "true");
-$("details[open]:not([aria-expanded])").attr("aria-expanded", "true");
-$("*[contextmenu]:not([aria-haspopup])").attr("aria-haspopup", "true");
-
-// ARIA roles
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-$("body:not([role])").attr("role", "document");
-$("header:not([role])").attr("role", "banner");
-$("#header:not([role])").attr("role", "banner");
-$("nav:not([role])").attr("role", "navigation");
-$("main:not([role])").attr("role", "main");
-$("#content:not([role])").attr("role", "main");
-$("section:not([role])").attr("role", "region");
-$("form:not([role])").attr("role", "form");
-$("option:not([role])").attr("role", "option");
-$("button:not([role])").attr("role", "button");
-$("fieldset:not([role])").attr("role", "group");
-$("optgroup:not([role])").attr("role", "group");
-$("input[type=text]:not([role])").attr("role", "textbox");
-$("input[type=password]:not([role])").attr("role", "textbox");
-$("input[type=url]:not([role])").attr("role", "textbox");
-$("input[type=email]:not([role])").attr("role", "textbox");
-$("input[type=submit]:not([role])").attr("role", "button");
-$("input[type=reset]:not([role])").attr("role", "button");
-$("input[type=image]:not([role])").attr("role", "button");
-$("input[type=checkbox]:not([role])").attr("role", "checkbox");
-$("input[type=radio]:not([role])").attr("role", "radio");
-$("input[type=range]:not([role])").attr("role", "slider");
-$("input[type][list]:not([role])").attr("role", "combobox");
-$("select:not([role])").attr("role", "combobox");
-$("progress:not([role])").attr("role", "progressbar");
-$("table:not([role])").attr("role", "grid");
-$("thead:not([role])").attr("role", "rowgroup");
-$("tbody:not([role])").attr("role", "rowgroup");
-$("tfoot:not([role])").attr("role", "rowgroup");
-$("tr:not([role])").attr("role", "row");
-$("td:not([role])").attr("role", "gridcell");
-$("a:not([role])").attr("role", "link");
-$("hr:not([role])").attr("role", "separator");
-$("img:not([role])").attr("role", "img");
-$("ul:not([role])").attr("role", "list");
-$("ol:not([role])").attr("role", "list");
-$("datalist:not([role])").attr("role", "listbox");
-$("li:not([role])").attr("role", "listitem");
-$("output:not([role])").attr("role", "status");
-$("article:not([role])").attr("role", "article");
-$("aside:not([role])").attr("role", "complementary");
-$("footer:not([role])").attr("role", "contentinfo");
-
-// Email extensions autocomplete (To Be Fixed)
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-//	$("input[type=email]").on("keyup", function (event) {
-//		var value = $(this).val();
-//		var bindTo = $("input[type=email]");
-//		var datalist = $("<datalist />", {
-//			id: "email-options"
-//		}).insertAfter(bindTo);
-//		bindTo.attr("list", "email-options");
-//		var domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"];
-//		var siteDomains = ["Gmail", "Yahoo", "Hotmail", "Outlook"];
-//		if (value.indexOf("@") != -1) {
-//			value = value.split("@")[0];
-//			newOptionsString = "";
-//			for (var i = 0; i < domains.length; i++) {
-//				newOptionsString += "<option value='" + value + "@" + domains[i] + "'>" + siteDomains[i];
-//			}
-//			datalist.html(newOptionsString);
-//		} else {}
-//	});
-
-// Form validation (To Be Fixed)
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-//	$(document).ready(function () {
-//		$("input[type=email]").on("keyup", function () {
-//			if (!$(this).val().match(/^([a-zA-Z]{3,16})$/)) {
-//				$("input[type=email]").after('<p class="helper-text text-danger">Please enter a valid email address</p>');
-//			}
-//		});
-//	});
-
-//	$("input[type=number]").onBlur(function () {
-//		$("p.text-validation").hide();
-//		var inputVal = $(this).val();
-//		var numericReg = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
-//		if (!numericReg.test(inputVal)) {
-//			$(this).after('<p class="text-validation text-danger">Please enter a valid number (0-9)</p>');
-//		}
-//	});

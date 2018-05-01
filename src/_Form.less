@@ -5,7 +5,6 @@ textarea,
 select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	appearance: none;
 	background-color: transparent;
 	border: 1px solid @grey-200;
 	border-radius: @border-radius;
@@ -27,13 +26,12 @@ select {
 	&::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		-moz-appearance: none;
-		appearance: none;
 		display: none;
 	}
 	&:focus {
 		border-color: @amber-400;
-		-webkit-box-shadow: 0 0 0 2px @amber-light;
-		box-shadow: 0 0 0 2px @amber-light;
+		-webkit-box-shadow: 0 0 0 2px @amber-50;
+		box-shadow: 0 0 0 2px @amber-50;
 		outline: 0;
 	}
 	&:disabled {
