@@ -28,7 +28,7 @@ git clone https://github.com/digitdesign/digitxd.git
 Feel free to dive in! [Open an issue](https://github.com/digitdesign/digitxd/issues/new/) or submit a PR.
 
 ### License
-Copyright (c) 2018, Go Digit General Insurance Ltd. or its affiliates
+Copyright (c) 2018 Go Digit General Insurance Ltd. or its affiliates
 
 ### Acknowledgement
 This project was created and is maintained by [Digit Design](https://godigit.design/).
