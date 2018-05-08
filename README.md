@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://d2h44aw7l5xdvz.cloudfront.net/xd/img/digit-xd-brandmark.svg" width="64" alt="XD" />
+	<img src="https://d2h44aw7l5xdvz.cloudfront.net/xd/img/digit-xd-brandmark.svg" width="64" alt="XD" style="user-select: none;" />
 	<h3 align="center">Experience Design Framework</h3>
 	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework for Digit Insurance applications.</p>
 	<p align="center">
