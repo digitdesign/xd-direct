@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: #FFF;
-  color: #222;
+  color: #000;
   font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.6;
@@ -24,7 +24,7 @@ body {
 }
 abbr {
   text-decoration: none;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #DDD;
 }
 article,
 aside,
@@ -39,7 +39,7 @@ dfn {
 }
 mark {
   background-color: #FE9;
-  color: #222;
+  color: #000;
 }
 small {
   font-size: 80%;
@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
+  color: #000;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 0;
@@ -274,7 +274,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 code {
-  background: #EEE;
+  background: #DDD;
   border-radius: 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: inherit;
@@ -283,7 +283,7 @@ code {
   white-space: nowrap;
 }
 pre {
-  background: #EEE;
+  background: #DDD;
   border-radius: 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow-y: hidden;
@@ -298,7 +298,7 @@ summary {
   display: list-item;
 }
 dt {
-  color: #222;
+  color: #000;
   font-weight: 600;
 }
 dl,
@@ -422,8 +422,8 @@ button.secondary,
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#EEE));
-  background: linear-gradient(to bottom, #F5F5F5, #EEE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#DDD));
+  background: linear-gradient(to bottom, #F5F5F5, #DDD);
   background-origin: border-box;
 }
 .button.secondary:focus,
@@ -496,7 +496,7 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: transparent;
-  border: 1px solid #CCC;
+  border: 1px solid #DDD;
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;
@@ -507,7 +507,7 @@ select {
   font-family: inherit;
   font-size: 1.4rem;
   height: 40px;
-  color: #222;
+  color: #000;
   line-height: 1;
   text-overflow: ellipsis;
   -webkit-transition: all 65ms ease-in-out;
@@ -532,8 +532,8 @@ select:focus {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
 textarea:disabled,
 select:disabled {
-  background: #EEE;
-  border-color: #EEE;
+  background: #DDD;
+  border-color: #DDD;
   cursor: not-allowed;
   opacity: .6;
 }
@@ -552,8 +552,8 @@ input[type="checkbox"]:disabled,
 input[type="radio"]:disabled {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #EEE;
-  border-color: #EEE;
+  background: #DDD;
+  border-color: #DDD;
   cursor: not-allowed;
   opacity: .6;
 }
@@ -586,16 +586,11 @@ textarea {
 }
 .label,
 label {
-  color: #222;
+  color: #000;
   display: block;
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0 0 4px 2px;
-}
-.label.optional:after,
-label.optional:after {
-  color: #888;
-  content: " (Optional)";
 }
 .label-inline {
   display: inline-block;
@@ -615,13 +610,13 @@ legend {
   white-space: normal;
 }
 :-ms-input-placeholder {
-  color: #CCC;
+  color: #DDD;
 }
 :-moz-placeholder {
-  color: #CCC;
+  color: #DDD;
 }
 ::-webkit-input-placeholder {
-  color: #CCC;
+  color: #DDD;
 }
 hr {
   border: 0;
@@ -702,7 +697,7 @@ table {
   width: 100%;
 }
 tr {
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #DDD;
 }
 tr:last-child {
   border-bottom: 0;
@@ -720,7 +715,7 @@ caption {
   text-align: left;
 }
 th {
-  border-bottom: 2px solid #EEE;
+  border-bottom: 2px solid #DDD;
   font-weight: 700;
 }
 td,
@@ -786,7 +781,7 @@ a.link {
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 2px solid transparent;
-  color: #888;
+  color: #666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,7 +807,7 @@ img.brand {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  color: #222;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,7 +858,7 @@ section:first-child {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  color: #222;
+  color: #000;
 }
 .card:empty::after,
 .card .empty::after {
@@ -911,7 +906,7 @@ section:first-child {
   height: auto;
   padding: 10px 18px;
   background: #F5F5F5;
-  border: 1px solid #CCC;
+  border: 1px solid #DDD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,7 +1168,7 @@ section:first-child {
   background-color: #F5F5F5;
 }
 .bg-muted {
-  background-color: #AAA;
+  background-color: #BBB;
 }
 .bg-primary {
   background-color: #FB0;
@@ -1191,13 +1186,13 @@ section:first-child {
   background-color: #F43;
 }
 .bg-inverse {
-  background-color: #222;
+  background-color: #000;
 }
 .bg-white {
   background-color: #FFF;
 }
 .text-muted {
-  color: #AAA;
+  color: #BBB;
 }
 .text-primary {
   color: #FB0;
@@ -1221,7 +1216,7 @@ section:first-child {
   color: #000;
 }
 .text-dark {
-  color: #222;
+  color: #666;
 }
 .text-link {
   color: #29F;
@@ -1352,7 +1347,7 @@ section:first-child {
     text-shadow: none !important;
   }
   body {
-    color: #222;
+    color: #000;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 12pt;
     line-height: 1.4;
