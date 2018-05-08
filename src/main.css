@@ -38,7 +38,7 @@ dfn {
   font-style: italic;
 }
 mark {
-  background-color: #FD6;
+  background-color: #FE9;
   color: #000;
 }
 small {
@@ -336,7 +336,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #F43;
+  color: #F65;
   text-decoration: underline;
   text-decoration-skip: ink;
 }
@@ -348,7 +348,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #FB0;
+  background: #FC3;
   background-origin: border-box;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -413,7 +413,7 @@ button.loading,
 input[type="button"].loading,
 input[type="reset"].loading,
 input[type="submit"].loading {
-  background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23222%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 32px;
+  background: #FC3 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23222%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 32px;
   color: transparent !important;
   pointer-events: none;
 }
@@ -524,9 +524,9 @@ select::-webkit-inner-spin-button {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):focus,
 textarea:focus,
 select:focus {
-  border-color: #F90;
-  -webkit-box-shadow: 0 0 0 2px #FD6;
-  box-shadow: 0 0 0 2px #FD6;
+  border-color: #FB0;
+  -webkit-box-shadow: 0 0 0 2px #FE9;
+  box-shadow: 0 0 0 2px #FE9;
   outline: 0;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
@@ -797,11 +797,11 @@ a.link:hover {
   color: #000;
 }
 a.link.active {
-  border-color: #FB0;
+  border-color: #FC3;
   color: #000;
 }
 a.link.active:hover {
-  border-color: #FB0;
+  border-color: #FC3;
 }
 img.brand {
   -webkit-box-align: stretch;
@@ -1171,19 +1171,19 @@ section:first-child {
   background-color: #BBB;
 }
 .bg-primary {
-  background-color: #FB0;
+  background-color: #FC3;
 }
 .bg-success {
-  background-color: #8C4;
+  background-color: #9D5;
 }
 .bg-info {
   background-color: #29F;
 }
 .bg-warning {
-  background-color: #F70;
+  background-color: #FA0;
 }
 .bg-danger {
-  background-color: #F43;
+  background-color: #F65;
 }
 .bg-inverse {
   background-color: #000;
@@ -1195,19 +1195,19 @@ section:first-child {
   color: #BBB;
 }
 .text-primary {
-  color: #FB0;
+  color: #FC3;
 }
 .text-success {
-  color: #8C4;
+  color: #9D5;
 }
 .text-info {
   color: #29F;
 }
 .text-warning {
-  color: #F70;
+  color: #FA0;
 }
 .text-danger {
-  color: #D22;
+  color: #E00;
 }
 .text-white {
   color: #FFF;
@@ -1230,19 +1230,19 @@ section:first-child {
   color: #999;
 }
 .border-primary {
-  color: #F90;
+  color: #FB0;
 }
 .border-success {
-  color: #693;
+  color: #8B4;
 }
 .border-info {
   color: #29F;
 }
 .border-warning {
-  color: #F70;
+  color: #FA0;
 }
 .border-danger {
-  color: #D22;
+  color: #E00;
 }
 .noselect {
   -ms-user-select: none;
@@ -1266,10 +1266,10 @@ section:first-child {
   padding: 0;
 }
 ::-moz-selection {
-  background: #FD6;
+  background: #FE9;
 }
 ::selection {
-  background: #FD6;
+  background: #FE9;
 }
 @media only screen and (max-width: 768px) {
   [class*=col-] {
@@ -1288,7 +1288,7 @@ section:first-child {
     padding: 14px;
   }
   a.link.active {
-    border-left: 2px solid #FB0;
+    border-left: 2px solid #FC3;
     border-bottom: 0;
   }
   .navbar {
