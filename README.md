@@ -15,7 +15,7 @@
 	</p>
 </div>
 <br />
-<hr />
+<hr style="background-color: #FB0; height: .1em;" />
 
 ### Installation
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
