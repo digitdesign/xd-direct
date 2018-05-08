@@ -2,7 +2,8 @@
 
 // Navbar
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-document.getElementsByClassName('.toggle').onclick(function () {
+const navbarToggle = document.getElementsByClassName('.toggle');
+navbarToggle.click(function () {
 	let navButton = document.getElementsByClassName('.toggle').parent;
-    navButton.classList.toggle("active")
+    navButton.classList.toggle("active");
 });
