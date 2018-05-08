@@ -38,7 +38,7 @@ dfn {
   font-style: italic;
 }
 mark {
-  background-color: #FE9;
+  background-color: #FD6;
   color: #000;
 }
 small {
@@ -336,7 +336,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #E33;
+  color: #F43;
   text-decoration: underline;
   text-decoration-skip: ink;
 }
@@ -524,9 +524,9 @@ select::-webkit-inner-spin-button {
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):focus,
 textarea:focus,
 select:focus {
-  border-color: #FA0;
-  -webkit-box-shadow: 0 0 0 2px #FE9;
-  box-shadow: 0 0 0 2px #FE9;
+  border-color: #F90;
+  -webkit-box-shadow: 0 0 0 2px #FD6;
+  box-shadow: 0 0 0 2px #FD6;
   outline: 0;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]):disabled,
@@ -1180,7 +1180,7 @@ section:first-child {
   background-color: #29F;
 }
 .bg-warning {
-  background-color: #F80;
+  background-color: #F70;
 }
 .bg-danger {
   background-color: #F43;
@@ -1198,16 +1198,16 @@ section:first-child {
   color: #FB0;
 }
 .text-success {
-  color: #7B4;
+  color: #8C4;
 }
 .text-info {
   color: #29F;
 }
 .text-warning {
-  color: #F80;
+  color: #F70;
 }
 .text-danger {
-  color: #F43;
+  color: #D22;
 }
 .text-white {
   color: #FFF;
@@ -1230,7 +1230,7 @@ section:first-child {
   color: #999;
 }
 .border-primary {
-  color: #FA0;
+  color: #F90;
 }
 .border-success {
   color: #693;
@@ -1242,7 +1242,7 @@ section:first-child {
   color: #F70;
 }
 .border-danger {
-  color: #E33;
+  color: #D22;
 }
 .noselect {
   -ms-user-select: none;
@@ -1266,10 +1266,10 @@ section:first-child {
   padding: 0;
 }
 ::-moz-selection {
-  background: #FE9;
+  background: #FD6;
 }
 ::selection {
-  background: #FE9;
+  background: #FD6;
 }
 @media only screen and (max-width: 768px) {
   [class*=col-] {
