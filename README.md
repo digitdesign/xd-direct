@@ -1,7 +1,7 @@
 <div align="center">
 	<img src="https://d2h44aw7l5xdvz.cloudfront.net/xd/img/digit-xd-brandmark.svg" width="64" alt="XD" />
 	<h3 align="center">Experience Design Framework</h3>
-	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework for Digit Insurance applications.</p>
+	<p align="center">A robust, versatile, and consistent HTML/CSS/JS framework for Digit Insurance Direct Portal.</p>
 	<p align="center">
 		<a href="https://github.com/digitdesign/digitxd/releases/latest">
 			<img src="https://img.shields.io/github/release/digitdesign/digitxd.svg" alt="" />
