@@ -21,7 +21,7 @@
 - [Download latest release](https://github.com/digitdesign/digitxd/archive/master.zip) or;
 - Clone the repository via command line:
 ```sh
-git clone https://github.com/digitdesign/digitxd.git
+git clone https://github.com/digitdesign/xd-direct.git
 ```
 
 ### Contributing
